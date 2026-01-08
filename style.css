@@ -1,0 +1,884 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Inter;
+}
+#whatsapp-icon {
+  position: fixed;
+  right: 0px;
+  bottom: 50px;
+  z-index: 1000;
+  width: 50px;
+  height: 50px;
+  color: white;
+  background-color: #25d366;
+}
+/* ------------------------------------------------ whatsapp icon end ------------------------------------------------ */ 
+       .whatsapp-float {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+            transition: all 0.3s ease;
+            color: #25D366;
+          }
+          
+          .whatsapp-float:hover {
+          color: #128C7E;
+            transform: scale(1.1);
+        }
+        
+        .whatsapp-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #25D366;
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 20%;
+            text-decoration: none;
+            box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4);
+            transition: all 0.3s ease;
+        }
+        
+        .whatsapp-button:hover {
+            background-color: #128C7E;
+            box-shadow: 0 6px 16px rgba(37, 211, 102, 0.6);
+        }
+        
+        .whatsapp-icon {
+            font-size: 32px;
+        }
+        
+        /* نسخة مع نص */
+        .whatsapp-float-with-text {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+        }
+        
+        .whatsapp-button-text {
+            display: flex;
+            align-items: center;
+            background-color: #25D366;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 10px;
+            text-decoration: none;
+            box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4);
+            transition: all 0.3s ease;
+        }
+        
+        .whatsapp-button-text:hover {
+            background-color: #128C7E;
+            transform: translateY(-3px);
+        }
+        
+        .whatsapp-button-text i {
+            font-size: 24px;
+            margin-right: 10px;
+        }
+        
+        /* استايل للشاشات الصغيرة */
+        @media (max-width: 768px) {
+            .whatsapp-float {
+                bottom: 15px;
+                right: 15px;
+            }
+            
+            .whatsapp-button {
+                width: 55px;
+                height: 55px;
+            }
+        }
+/* ----------------------------------------------- header section end ------------------------------------------------ */
+.top-header {
+  background-color: #ebecf0;
+  width: 100%;
+  padding-top: 12px;
+
+  .container {
+    a {
+      font-weight: 400;
+      font-size: 14px;
+      color: #253c62;
+      text-decoration: none;
+    }
+    a:hover {
+      color: #0f5c93;
+    }
+    p {
+      font-size: 18px;
+    }
+    .icons {
+      i {
+        width: 22px;
+        height: 22px;
+      }
+    }
+  }
+}
+.navBar {
+  nav {
+    gap: 64px;
+
+    a {
+      font-weight: 500;
+      font-size: 24px;
+      color: #253c62;
+      text-decoration: none;
+    }
+    a:hover {
+      color: #0f5c93;
+    }
+  }
+  img {
+    width: 81px;
+    height: 80px;
+  }
+  .contact {
+    .pIcon {
+      color: #00a8e8;
+      background-color: #ebecf0;
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+    }
+    .details {
+      height: 2vh;
+      .pNum {
+        font-weight: 400;
+        font-size: 14px;
+        color: #d3d4d7;
+      }
+      .Num {
+        font-weight: 400;
+        font-size: 14px;
+        color: #253c62;
+      }
+    }
+  }
+}
+
+/* -------------------------------------------- section1 ----------------------------------------------- */
+.section1 {
+  .hero {
+    background-image: url("./assets/herobg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+    .opacity {
+      height: 100%;
+      width: 100%;
+      background-color: #253c624f;
+    }
+    .describton {
+      .pS {
+        font-family: Inter;
+        font-weight: 500;
+        font-style: Medium;
+        font-size: 20px;
+        color: #ffffffcc;
+      }
+      h1 {
+        font-family: Inter;
+        font-weight: 700;
+        font-style: Bold;
+        font-size: 80px;
+        color: white;
+      }
+      p {
+        font-family: Inter;
+        font-weight: 500;
+        font-style: Medium;
+        font-size: 22px;
+        color: white;
+      }
+    }
+  }
+}
+
+/* -------------------------------------------- section2 ----------------------------------------------- */
+
+.section2 {
+  .bg-img {
+    background-image: url("./assets/bgimage.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .op {
+    width: 100%;
+    background-color: #ffffffd6;
+    .c {
+      transform: translate(0, -50px);
+    }
+  }
+  .content {
+    padding-bottom: 70px;
+    .img1 {
+      background-image: url("./assets/about_us.png");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 330px;
+      height: 548px;
+      border-radius: 11px;
+    }
+    .img2 {
+      background-image: url("./assets/about_us.png");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 330px;
+      height: 548px;
+      border-radius: 11px;
+    }
+  }
+  .about_us {
+    margin-left: 100px;
+    margin-right: 88px;
+    .sbtitle {
+      font-family: Inter;
+      font-weight: 500;
+      font-style: Medium;
+      font-size: 24px;
+      color: #0f5c93;
+    }
+    .title {
+      font-family: Inter;
+      font-weight: 500;
+      font-style: Medium;
+      font-size: 48px;
+      color: #063969;
+    }
+    p {
+      font-family: Inter;
+      font-weight: 400;
+      font-style: Regular;
+      font-size: 18px;
+      color: #253c62cc;
+    }
+    .companies {
+      width: 114px;
+      height: 46px;
+      border-radius: 16px;
+    }
+  }
+}
+
+/* ------------------- COUNTER -------------------------------------- */
+
+.stats-container {
+  padding: 54px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  max-width: 1200px;
+  width: 100%;
+  background-color: #0f5c93;
+}
+.bg {
+  background-color: #0f5c93;
+
+  .stat-box {
+    border-radius: 20px;
+    padding: 40px 30px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s;
+  }
+
+  .number {
+    font-size: 64px;
+    font-weight: 900;
+    margin-bottom: 15px;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+  }
+
+  .label {
+    font-size: 20px;
+    color: #ccd6f6;
+    opacity: 0.9;
+    font-weight: 500;
+    letter-spacing: 1px;
+  }
+
+  /* Responsive */
+  @media (max-width: 992px) {
+    .stats-container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 576px) {
+    .stats-container {
+      grid-template-columns: 1fr;
+    }
+
+    .number {
+      font-size: 54px;
+    }
+  }
+}
+
+/* -------------------------------------- section 3 ---------------------------------------- */
+
+.section3 {
+  .bg-img {
+    background-image: url("./assets/bgimage.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .op {
+      width: 100%;
+      background-color: #ffffffd6;
+      height: 100%;
+    }
+
+    .content {
+      align-items: center;
+      justify-content: center;
+      .head {
+        p {
+          padding: 0px 14px;
+          margin-top: 20px;
+          font-family: Inter;
+          font-weight: 500;
+          font-style: Medium;
+          font-size: 40px;
+          color: #0f5c93;
+          letter-spacing: 2px;
+        }
+      }
+      p {
+        font-family: Inter;
+        font-weight: 400;
+        font-style: Regular;
+        font-size: 24px;
+        color: #253c62;
+      }
+    }
+  }
+}
+
+.border {
+  height: 5px;
+  width: 128px;
+  background-color: #0f5c93;
+}
+.gCircle {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #00000033;
+}
+.bCircle {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #0f5c93;
+}
+.BCircle {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  /* background-color: #0F5C93; */
+  border: 2px solid #0f5c93;
+}
+/* -------------------------------- slider ------------------------------ */
+
+.slider-container {
+  position: relative;
+  width: 1280px; /* 426*3 = 1278 تقريباً + هوامش بسيطة */
+  height: 340px; /* 320 + هامش للتحكم */
+  overflow: hidden;
+  border-radius: 12px;
+
+  padding: 10px;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.8s ease-in-out;
+  height: 100%;
+  width: 100%;
+}
+
+.slide {
+  flex: 0 0 426px;
+  height: 320px;
+  border-radius: 8px;
+  opacity: 1;
+  margin: 0 5px;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.slide:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+@media (max-width: 1300px) {
+  .slider-container {
+    width: 95%;
+  }
+}
+
+/* <!-- ------------------------------------------------------ section4---------------------------------------------------------------------------------- --> */
+
+.section4 {
+  .bg-img {
+    background-image: url("./assets/bgimage.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .op {
+      padding-top: 20px;
+      width: 100%;
+      background-color: #ffffffd6;
+      height: 100%;
+      .services {
+        width: 100%;
+        margin-top: 80px;
+        gap: 174px;
+      }
+      .sImage {
+        width: 596px;
+        height: 391px;
+        border-radius: 16px;
+        background-image: url("./assets/services.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .details {
+        width: 440px;
+        .title {
+          font-family: Inter;
+          font-weight: 500;
+          font-style: Medium;
+          font-size: 48px;
+          color: #063969;
+        }
+      }
+      .cards {
+        padding-top: 32px;
+        gap: 20px;
+
+        .card {
+          display: flex;
+          flex-direction: row;
+          width: 422px;
+          height: 142px;
+          border-radius: 16px;
+          border: none;
+          background-color: #ffffff;
+          img {
+            width: 80px;
+            height: 80px;
+            margin: 31px 12px;
+          }
+          .content {
+            padding: 23px 12px;
+            .p {
+              font-family: Inter;
+              font-weight: 500;
+              font-style: Medium;
+              font-size: 18px;
+              color: #253c62;
+            }
+            p {
+              font-family: Inter;
+              font-weight: 400;
+              font-style: Regular;
+              font-size: 12px;
+              color: #253c6299;
+            }
+          }
+        }
+        .card2 {
+          width: 422px;
+          height: 142px;
+          border-radius: 16px;
+          background-color: #ffffff;
+
+          .imgC {
+            width: 80px;
+            height: 80px;
+            margin: 31px 12px;
+          }
+          .bottomRight {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+          }
+          .content {
+            padding: 23px 12px;
+            .p {
+              font-family: Inter;
+              font-weight: 500;
+              font-style: Medium;
+              font-size: 18px;
+              color: #253c62;
+            }
+            p {
+              font-family: Inter;
+              font-weight: 400;
+              font-style: Regular;
+              font-size: 12px;
+              color: #253c6299;
+            }
+          }
+        }
+      }
+    }
+
+    .content {
+      align-items: center;
+      justify-content: center;
+      .head {
+        p {
+          padding: 0px 14px;
+          margin-top: 20px;
+          font-family: Inter;
+          font-weight: 500;
+          font-style: Medium;
+          font-size: 40px;
+          color: #0f5c93;
+          letter-spacing: 2px;
+        }
+      }
+      p {
+        font-family: Inter;
+        font-weight: 400;
+        font-style: Regular;
+        font-size: 24px;
+        color: #253c62;
+      }
+    }
+  }
+}
+.hov:hover {
+  transform: scale(1.02);
+  transition: 0.8s ease;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+}
+
+/* <!-- ------------------------------------------------------ section5---------------------------------------------------------------------------------- --> */
+
+.section5 {
+  .bg-img {
+    background-image: url("./assets/bgimage.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .op {
+      padding-top: 40px;
+      width: 100%;
+      background-color: #ffffffd6;
+      height: 100%;
+    }
+    .content {
+      align-items: center;
+      justify-content: center;
+      .head {
+        p {
+          padding: 0px 14px;
+          margin-top: 20px;
+          font-family: Inter;
+          font-weight: 500;
+          font-style: Medium;
+          font-size: 40px;
+          color: #0f5c93;
+          letter-spacing: 2px;
+        }
+      }
+      p {
+        font-family: Inter;
+        font-weight: 400;
+        font-style: Regular;
+        font-size: 24px;
+        color: #253c62;
+      }
+    }
+  }
+  .cInfo1 {
+    border-radius: 12px;
+    width: 612px;
+    height: 302px;
+    background-color: #ffffff;
+    i {
+      font-size: 48px;
+      color: #1077bd;
+    }
+    .title {
+      font-family: Inter;
+      font-weight: 500;
+      font-style: Medium;
+      font-size: 28px;
+      color: #253c62;
+    }
+    .sbtitle {
+      font-family: Inter;
+      font-weight: 400;
+      font-style: Regular;
+      font-size: 16px;
+      color: #063969;
+    }
+    .location {
+      font-family: Inter;
+      font-weight: 400;
+      font-style: Regular;
+      font-size: 24px;
+      color: #1077bd;
+    }
+  }
+  .cForm {
+    width: 612px;
+    height: 612px;
+    border-radius: 12px;
+    background-color: #ffffff;
+    padding: 40px;
+    gap: 24px;
+    color: #696767;
+  }
+}
+#btnSub {
+  background-color: #1077bd;
+}
+
+.cInfo2 {
+  margin-top: 8px;
+  background-color: #ffffff;
+  width: 302px;
+  height: 302px;
+  border-radius: 12px;
+  i {
+    font-size: 48px;
+    color: #1077bd;
+    margin-bottom: 20px;
+  }
+  .title {
+    font-family: Inter;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 28px;
+    color: #253c62;
+  }
+  .sbtitle {
+    font-family: Inter;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 12px;
+    color: #253c62;
+  }
+  .num {
+    font-family: Inter;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 18px;
+    color: #1077bd;
+  }
+}
+.cInfo3 {
+  margin-top: 8px;
+  background-color: #ffffff;
+  width: 302px;
+  height: 302px;
+  border-radius: 12px;
+  i {
+    font-size: 48px;
+    color: #1077bd;
+    margin-bottom: 10px;
+  }
+  .title {
+    font-family: Inter;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 28px;
+    color: #253c62;
+  }
+  .sbtitle {
+    font-family: Inter;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 18px;
+    color: #1077bd;
+  }
+}
+
+
+
+  /* أضف هذا الكود في نهاية ملف style.css الحالي */
+
+/* ===========================================
+   RTL SUPPORT FOR ARABIC LANGUAGE
+=========================================== */
+
+/* اتجاه RTL للغة العربية */
+html[dir="rtl"] {
+  text-align: right;
+}
+
+/* تخصيصات عامة للعربية */
+.arabic-font {
+  font-family: 'Cairo', 'Tahoma', sans-serif !important;
+}
+
+/* تحسينات للهيدر في الوضع العربي */
+html[dir="rtl"] .navBar {
+  flex-direction: row;
+}
+
+html[dir="rtl"] .navBar nav {
+  gap: 40px;
+}
+
+html[dir="rtl"] .contact .d-flex {
+  flex-direction: row;
+}
+
+/* تعديلات للـ About Us في العربية */
+html[dir="rtl"] .section2 .content {
+  flex-direction: row;
+}
+
+html[dir="rtl"] .section2 .content .d-flex {
+  flex-direction: row;
+}
+
+html[dir="rtl"] .section2 .about_us {
+  margin-left: 0;
+  margin-right: 100px;
+  align-items: flex-end;
+  text-align: right;
+}
+
+/* تعديلات للخدمات في العربية */
+html[dir="rtl"] .section4 .services {
+  flex-direction: row;
+}
+
+html[dir="rtl"] .section4 .details {
+  align-items: flex-end;
+  text-align: right;
+}
+
+html[dir="rtl"] .section4 .cards {
+  flex-direction: row;
+}
+
+/* تعديلات للاتصال في العربية */
+html[dir="rtl"] .section5 .C {
+  flex-direction: row;
+}
+
+html[dir="rtl"] .cInfo1,
+html[dir="rtl"] .cInfo2,
+html[dir="rtr"] .cInfo3 {
+  text-align: center;
+}
+
+/* تعديلات الفورم في العربية */
+html[dir="rtl"] .cForm {
+  text-align: right;
+}
+
+html[dir="rtl"] .cForm label {
+  text-align: right;
+}
+
+/* تعديلات السلايدر للعربية */
+html[dir="rtl"] .slider-container {
+  direction: ltr; /* نحافظ على اتجاه السلايدر */
+}
+
+/* زر اللغة */
+.language-selector {
+  margin-left: 10px;
+}
+
+#languageToggle {
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+#languageToggle:hover {
+  color: #0f5c93 !important;
+}
+
+/* تعديلات للرسائل في الفورم بالعربية */
+html[dir="rtl"] textarea.form-control {
+  text-align: right;
+}
+
+/* تعديلات للعنوان في الوضع العربي */
+html[dir="rtl"] .top-header .container {
+  justify-content: flex-end;
+}
+
+html[dir="rtl"] .language-selector {
+  margin-left: 0;
+  margin-right: 10px;
+}
+
+/* تحسينات للشاشات الصغيرة في الوضع العربي */
+@media (max-width: 768px) {
+  html[dir="rtl"] .navBar nav {
+    gap: 20px;
+  }
+  
+  html[dir="rtl"] .section2 .about_us {
+    margin-right: 0;
+    text-align: center;
+    align-items: center;
+  }
+  
+  html[dir="rtl"] .section4 .services {
+    flex-direction: column;
+  }
+  
+  html[dir="rtl"] .section4 .details {
+    align-items: center;
+    text-align: center;
+  }
+}
+
+/* لمسات نهائية للعربية */
+html[dir="rtl"] .pS,
+html[dir="rtl"] h1,
+html[dir="rtl"] p {
+  text-align: right;
+}
+
+html[dir="rtl"] .describton {
+  align-items: flex-end;
+}
+
+/* تحسينات للأزرار في العربية */
+html[dir="rtl"] .btn {
+  text-align: center;
+}
