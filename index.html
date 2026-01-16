@@ -46,7 +46,9 @@
             <a href=""><i class="fa-brands fa-linkedin"></i></a>
             <a href=""><i class="fa-brands fa-youtube"></i></a>
           </div>
-          <div class="language-selector d-flex align-items-center justify-content-center pb-4">
+          <div
+            class="language-selector d-flex align-items-center justify-content-center pb-4"
+          >
             <span>| </span>
             <button
               id="languageToggle"
@@ -62,8 +64,37 @@
       <div
         class="container d-flex navBar align-items-center justify-content-between"
       >
-        <img src="./assets/Logo.png" alt="Paradise-logo" />
-        <nav class="d-flex align-items-center justify-content-center">
+        <img
+          src="./assets/Logo.png"
+          alt="Paradise-logo"
+          class="d-none d-md-flex"
+        />
+
+        <!-- ------------------------------------------------- collapse ------------------------------------- -->
+        <div
+          class="d-flex align-items-end justify-content-between col-12 col-md-1 pe-1"
+        >
+          <img
+            src="./assets/Logo.png"
+            alt="Paradise-logo"
+            class="d-flex d-md-none"
+          />
+
+          <p class="d-inline-flex gap-1 d-flex d-md-none">
+            <a
+              style="text-decoration: none; color: #253c62; font-size: 32px"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseExample"
+              aria-expanded="false"
+              aria-controls="collapseExample"
+            >
+              <i class="fa-solid fa-bars"></i>
+            </a>
+          </p>
+        </div>
+
+        <nav class="d-none d-md-flex align-items-center justify-content-center">
           <a href="#home" data-translate="home">Home</a>
           <a href="#about_us" data-translate="about_us">About Us</a>
           <a href="#our_projects" data-translate="our_projects">Our Projects</a>
@@ -71,14 +102,14 @@
         </nav>
         <div class="contact">
           <div class="d-flex gap-4">
-            <div class="pIcon d-flex align-items-center justify-content-center">
+            <div
+              class="pIcon d-none d-md-flex align-items-center justify-content-center"
+            >
               <a href="" class="text-decoration-none" style="color: #00a8e8"
                 ><i class="fa-solid fa-phone"></i
               ></a>
             </div>
-            <div
-              class="details flex-column align-items-center justify-content-center"
-            >
+            <div class="details d-none d-md-flex flex-column">
               <p>
                 <span class="pNum" data-translate="phone_number"
                   >Phone Number</span
@@ -95,7 +126,7 @@
             </div>
             <a
               href="#contact_us"
-              class="btn btn-info text-white rounded-4 d-flex align-items-center justify-content-center text-decoration-none contact-btn"
+              class="btn btn-info text-white rounded-4 d-none d-md-flex align-items-center justify-content-center text-decoration-none contact-btn"
               style="background-color: #00a8e8"
               data-translate="contact_us"
             >
@@ -105,23 +136,101 @@
         </div>
       </div>
     </header>
+
     <!-- ------------------------------------------------- section1 -------------------------------------------------------  -->
+
+    <!-- --------------------------------------------------------------- colapse -------------------- -->
+
+    <div class="collapse" id="collapseExample">
+      <div
+        class="card card-body flex-column align-items-center justify-content-between"
+        style="background-color: rgba(255, 255, 255, 0); border-bottom: none"
+      >
+        <a
+          href="#home"
+          class="text-decoration-none fs-5"
+          data-translate="home"
+          style="height: 5vh; color: #253c62"
+          >Home</a
+        >
+        <a
+          href="#about_us"
+          class="text-decoration-none fs-5"
+          data-translate="about_us"
+          style="height: 5vh; color: #253c62"
+          >About Us</a
+        >
+        <a
+          href="#our_projects"
+          class="text-decoration-none fs-5"
+          data-translate="our_projects"
+          style="height: 5vh; color: #253c62"
+          >Our Projects</a
+        >
+        <a
+          href="#Services"
+          class="text-decoration-none fs-5"
+          style="height: 5vh; color: #253c62"
+          data-translate="services"
+          >Services</a
+        >
+      </div>
+    </div>
+
+    <!-- --------------------------------------------------------------- colapse end -------------------- -->
 
     <section class="section1 position-relative" id="home">
       <div class="hero">
         <div class="opacity">
           <div
-            class="container d-flex flex-column align-items-start justify-content-center h-100 describton"
+            class="container d-flex flex-column align-items-start justify-content-center h-100 describton w-100"
           >
-            <p class="pS" data-translate="welcome_to">Welcome to</p>
-            <h1 data-translate="paradise">Paradise</h1>
-            <p data-translate="hero_subtitle">
+            <p
+              id="pS"
+              class="ps text-center text-md-start w-100"
+              data-translate="welcome_to"
+            >
+              Welcome to
+            </p>
+            <h1
+              id="hs"
+              data-translate="paradise"
+              class="text-center text-md-start w-100"
+            >
+              Paradise
+            </h1>
+            <p
+              id="pss"
+              data-translate="hero_subtitle"
+              class="text-center text-md-start w-100"
+            >
               Designing & Building Luxury Swimming Pools You'll Love
             </p>
+            <div
+              class="d-flex d-md-none align-items-center justify-content-center w-100"
+            >
+              <a
+                href="#contact_us"
+                class="btn btn-info text-white rounded-3 p-2 d-flex d-md-none align-items-center justify-content-center btnhero text-decoration-none text-center text-md-start"
+                style="
+                  background-color: #00a8e8;
+                  text-decoration: none;
+                  width: 94px;
+                  height: 32px;
+                  border-radius: 8px;
+                  font-family: Inter;
+                  font-weight: 500;
+                  font-style: Medium;
+                  font-size: 12px;
+                "
+                data-translate="contact_us"
+              >
+                Contact Us
+              </a>
+            </div>
             <a
               href="#contact_us"
-              class="btn btn-info text-white rounded-3 p-2 d-flex align-items-center justify-content-center text-decoration-none"
-              style="background-color: #00a8e8; text-decoration: none"
+              class="btn btn-info text-white rounded-3 p-2 d-none d-md-block align-items-center justify-content-center btnhero text-decoration-none text-center text-md-start"
               data-translate="contact_us"
             >
               Contact Us
@@ -132,43 +241,176 @@
     </section>
 
     <!-- ------------------------------------------------- section2 -------------------------------------------------------  -->
-    <section class="section2 container" id="about_us">
+    <section class="section2" id="about_us">
       <div class="bg-img">
         <div class="op">
-          <div class="text-center c">
-            <a href="#our_projects"
-              ><img src="./assets/ourProject.png" alt=""
-            /></a>
-          </div>
-          <div class="content d-flex">
-            <div class="d-flex">
-              <div class="img1 me-2"></div>
-              <div class="img2 mt-5"></div>
+          <div class="container">
+            <div class="text-center c">
+              <a href="#our_projects"
+                ><img src="./assets/ourProject.png" alt=""
+              /></a>
             </div>
+            <div class="smTitle d-flex d-md-none flex-column">
+              <p
+                style="
+                  text-align: center;
+                  font-family: Inter;
+                  font-weight: 500;
+                  font-style: Medium;
+                  font-size: 12px;
+                  color: #0f5c93;
+                "
+              >
+                About Us
+              </p>
+              <p
+                style="
+                  text-align: center;
+                  font-family: Inter;
+                  font-weight: 500;
+                  font-style: Medium;
+                  font-size: 24px;
+                  color: #063969;
+                "
+              >
+                Who We Are
+              </p>
+            </div>
+            <div class="content d-flex">
+              <div class="d-flex">
+                <div class="img1 me-2"></div>
+                <div class="img2 mt-5"></div>
+              </div>
+              <div class="d-flex d-md-none flex-column">
+                <div class="d-flex container gap-3 pb-5">
+                  <div class="img3 d-block d-md-none"></div>
+                  <div>
+                    <p
+                      style="
+                        width: 180px;
+                        height: 120px;
+                        font-family: Inter;
+                        font-weight: 400;
+                        font-style: Regular;
+                        font-size: 12px;
+                        color: #253c62cc;
+                        padding-bottom: 24px;
+                      "
+                    >
+                      Paradise is a specialized company in designing,
+                      constructing, and maintaining all types of swimming pools,
+                      water lagoons, and fountains, with a commitment to the
+                      highest quality standards.
+                    </p>
+                    <p
+                      style="
+                        padding-top: 24px;
+                        width: 180px;
+                        height: 105px;
 
-            <div class="about_us d-flex flex-column align-items-start">
-              <p class="sbtitle" data-translate="about_us_title">About Us</p>
-              <p class="title" data-translate="who_we_are">Who We Are</p>
-              <p data-translate="about_text1">
-                Paradise is a specialized company in designing, constructing,
-                and maintaining all types of swimming pools, water lagoons, and
-                fountains, with a commitment to the highest quality standards.
-              </p>
-              <p data-translate="about_text2">
-                We specialize in the construction, maintenance, and water
-                treatment of swimming pools, and we are an authorized
-                distributor for leading American and European brands.
-              </p>
-              <div class="companie d-flex flex-wrap gap-4">
-                <img src="./assets/brands/brand1.png" alt="" />
-                <img src="./assets/brands/brand2.png" alt="" />
-                <img src="./assets/brands/brand3.png" alt="" />
-                <img src="./assets/brands/brand4.png" alt="" />
-                <img src="./assets/brands/brand5.png" alt="" />
-                <img src="./assets/brands/brand6.png" alt="" />
-                <img src="./assets/brands/brand7.png" alt="" />
-                <img src="./assets/brands/brand8.png" alt="" />
-                <img src="./assets/brands/brand9.png" alt="" />
+                        font-family: Inter;
+                        font-weight: 400;
+                        font-style: Regular;
+                        font-size: 12px;
+                        color: #253c62cc;
+                      "
+                    >
+                      We specialize in the construction, maintenance, and water
+                      treatment of swimming pools, and we are an authorized
+                      distributor for leading American and European brands.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="carousel-container container">
+                  <div class="carousel-track">
+                    <!-- الصور التسعة الأساسية -->
+                    <div class="carousel-slide">
+                      <img src="./assets/brands/brand1.png" alt="Image 1" />
+                    </div>
+                    <div class="carousel-slide">
+                      <img src="./assets/brands/brand2.png" alt="Image 2" />
+                    </div>
+                    <div class="carousel-slide">
+                      <img src="./assets/brands/brand3.png" alt="Image 3" />
+                    </div>
+                    <div class="carousel-slide">
+                      <img src="./assets/brands/brand4.png" alt="Image 4" />
+                    </div>
+                    <div class="carousel-slide">
+                      <img src="./assets/brands/brand5.png" alt="Image 5" />
+                    </div>
+                    <div class="carousel-slide">
+                      <img src="./assets/brands/brand6.png" alt="Image 6" />
+                    </div>
+                    <div class="carousel-slide">
+                      <img src="./assets/brands/brand7.png" alt="Image 7" />
+                    </div>
+                    <div class="carousel-slide">
+                      <img src="./assets/brands/brand8.png" alt="Image 8" />
+                    </div>
+                    <div class="carousel-slide">
+                      <img src="./assets/brands/brand9.png" alt="Image 9" />
+                    </div>
+
+                    <!-- نسخة من الصور للانفينيتي لوب -->
+                    <div class="carousel-slide">
+                      <img src="./assets/brands/brand1.png" alt="Image 1" />
+                    </div>
+                    <div class="carousel-slide">
+                      <img src="./assets/brands/brand2.png" alt="Image 2" />
+                    </div>
+                    <div class="carousel-slide">
+                      <img src="./assets/brands/brand3.png" alt="Image 3" />
+                    </div>
+                    <div class="carousel-slide">
+                      <img src="./assets/brands/brand4.png" alt="Image 4" />
+                    </div>
+                    <div class="carousel-slide">
+                      <img src="./assets/brands/brand5.png" alt="Image 5" />
+                    </div>
+                    <div class="carousel-slide">
+                      <img src="./assets/brands/brand6.png" alt="Image 6" />
+                    </div>
+                    <div class="carousel-slide">
+                      <img src="./assets/brands/brand7.png" alt="Image 7" />
+                    </div>
+                    <div class="carousel-slide">
+                      <img src="./assets/brands/brand8.png" alt="Image 8" />
+                    </div>
+                    <div class="carousel-slide">
+                      <img src="./assets/brands/brand9.png" alt="Image 9" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="about_us d-none d-md-flex flex-column align-items-start"
+              >
+                <p class="sbtitle" data-translate="about_us_title">About Us</p>
+                <p class="title" data-translate="who_we_are">Who We Are</p>
+                <p data-translate="about_text1">
+                  Paradise is a specialized company in designing, constructing,
+                  and maintaining all types of swimming pools, water lagoons,
+                  and fountains, with a commitment to the highest quality
+                  standards.
+                </p>
+                <p data-translate="about_text2">
+                  We specialize in the construction, maintenance, and water
+                  treatment of swimming pools, and we are an authorized
+                  distributor for leading American and European brands.
+                </p>
+                <div class="companie d-flex flex-wrap gap-4">
+                  <img src="./assets/brands/brand1.png" alt="" />
+                  <img src="./assets/brands/brand2.png" alt="" />
+                  <img src="./assets/brands/brand3.png" alt="" />
+                  <img src="./assets/brands/brand4.png" alt="" />
+                  <img src="./assets/brands/brand5.png" alt="" />
+                  <img src="./assets/brands/brand6.png" alt="" />
+                  <img src="./assets/brands/brand7.png" alt="" />
+                  <img src="./assets/brands/brand8.png" alt="" />
+                  <img src="./assets/brands/brand9.png" alt="" />
+                </div>
               </div>
             </div>
           </div>
@@ -212,34 +454,37 @@
 
     <!-- ---------------------------- section3 ------------------------------------------------------- -->
 
-    <section class="section3 container" id="our_projects">
+    <section class="section3" id="our_projects">
       <div class="bg-img">
         <div class="op">
-          <div class="d-flex content flex-column">
-            <div
-              class="head d-flex pt-3 align-items-center justify-content-center"
-            >
+          <div class="container">
+            <div class="d-flex content flex-column">
+              <div
+                class="head d-flex pt-3 align-items-center justify-content-center"
+              >
+                <div class="border" id="border"></div>
+                <p data-translate="our_projects_title" id="Op">Our Projects</p>
+                <div class="border" id="border"></div>
+              </div>
+              <p data-translate="projects_subtitle" id="bd">
+                Building Dreams Into Reality
+              </p>
+            </div>
+            <div class="slider-container mb-4">
+              <div class="slider" id="slider"></div>
+            </div>
+
+            <div class="d-flex align-items-center justify-content-center gap-2">
               <div class="border"></div>
-              <p data-translate="our_projects_title">Our Projects</p>
+              <div class="gCircle"></div>
+              <div
+                class="BCircle d-flex align-items-center justify-content-center"
+              >
+                <div class="bCircle"></div>
+              </div>
+              <div class="gCircle"></div>
               <div class="border"></div>
             </div>
-            <p data-translate="projects_subtitle">
-              Building Dreams Into Reality
-            </p>
-          </div>
-          <div class="slider-container mb-4">
-            <div class="slider" id="slider"></div>
-          </div>
-          <div class="d-flex align-items-center justify-content-center gap-2">
-            <div class="border"></div>
-            <div class="gCircle"></div>
-            <div
-              class="BCircle d-flex align-items-center justify-content-center"
-            >
-              <div class="bCircle"></div>
-            </div>
-            <div class="gCircle"></div>
-            <div class="border"></div>
           </div>
         </div>
       </div>
@@ -247,82 +492,106 @@
 
     <!-- ------------------------------------------------------ section4---------------------------------------------------------------------------------- -->
 
-    <section class="section4 container" id="Services">
+    <section class="section4" id="Services">
       <div class="bg-img">
         <div class="op">
-          <div class="d-flex content flex-column">
-            <div
-              class="head d-flex pt-3 align-items-center justify-content-center"
-            >
-              <div class="border"></div>
-              <p data-translate="services_title">Services</p>
-              <div class="border"></div>
-            </div>
-            <p data-translate="services_subtitle">
-              Expertise and Excellence in Every Service
-            </p>
-          </div>
-          <div class="services d-flex">
-            <div class="sImage"></div>
-            <div class="details d-flex flex-column">
-              <p class="title" data-translate="why_choose_us">Why Choose Us</p>
-              <p data-translate="why_choose_text">
-                At Paradise, we combine expertise, reliability, and excellence
-                to deliver top-quality services. From precise construction to
-                expert maintenance and water treatment, our dedicated team
-                ensures every project meets the highest standards. We focus on
-                efficiency, innovation, and complete client satisfaction, making
-                Paradise the trusted choice for all your needs.
+          <div class="container">
+            <div class="d-flex content flex-column">
+              <div
+                class="head d-flex pt-3 align-items-center justify-content-center"
+              >
+                <div class="border" id="border"></div>
+                <p data-translate="services_title" id="Op">Services</p>
+                <div class="border" id="border"></div>
+              </div>
+              <p data-translate="services_subtitle" id="bd">
+                Expertise and Excellence in Every Service
               </p>
             </div>
-          </div>
 
-          <div class="cards d-flex">
-            <div class="card hov">
-              <img src="./assets/cards/card1.png" alt="" />
-              <div class="content">
-                <p class="p" data-translate="service1_title">
-                  Reliable Maintenance Services
+            <!-- ---------------------------------------------------------- -->
+
+            <div class="d-flex container d-md-none flex-column">
+              <div>
+                <p id="wc">why Choose Us</p>
+                <p id="ap">
+                  At Paradise, we combine expertise, reliability, and excellence
+                  to deliver top-quality services. From precise construction to
+                  expert maintenance and water treatment, our dedicated team
+                  ensures every project meets the highest standards. We focus on
+                  efficiency, innovation, and complete client satisfaction,
+                  making Paradise the trusted choice for all your needs.
                 </p>
-                <p data-translate="service1_desc">
-                  We provide comprehensive maintenance, water treatment, and
-                  quick repairs to keep your pool safe and crystal clear
-                  year-round.
+              </div>
+              <img id="si" src="./assets/services.png" alt="" />
+            </div>
+
+            <!-- --------------------------------------------------- -->
+            <div class="services d-none d-md-flex">
+              <div class="sImage"></div>
+              <div class="details d-flex flex-column">
+                <p class="title" data-translate="why_choose_us">
+                  Why Choose Us
+                </p>
+                <p data-translate="why_choose_text">
+                  At Paradise, we combine expertise, reliability, and excellence
+                  to deliver top-quality services. From precise construction to
+                  expert maintenance and water treatment, our dedicated team
+                  ensures every project meets the highest standards. We focus on
+                  efficiency, innovation, and complete client satisfaction,
+                  making Paradise the trusted choice for all your needs.
                 </p>
               </div>
             </div>
-            <div class="card2 hov position-relative d-flex">
-              <img
-                class="topleft position-absolute top-0"
-                src="./assets/Subtract.png"
-                alt=""
-              />
-              <img class="imgC" src="./assets/cards/card2.png" alt="" />
-              <div class="content">
-                <p class="p" data-translate="service2_title">
-                  Expert & Certified Team
-                </p>
-                <p data-translate="service2_desc">
-                  Our team consists of highly skilled engineers and technicians
-                  with years of experience in pool construction and management.
-                </p>
+
+            <div class="cards d-flex flex-wrap flex-md-nowrap">
+              <div class="card hov">
+                <img src="./assets/cards/card1.png" alt="" />
+                <div class="content">
+                  <p class="p" data-translate="service1_title">
+                    Reliable Maintenance Services
+                  </p>
+                  <p data-translate="service1_desc">
+                    We provide comprehensive maintenance, water treatment, and
+                    quick repairs to keep your pool safe and crystal clear
+                    year-round.
+                  </p>
+                </div>
               </div>
-              <img
-                class="bottomRight position-absolute bottom-0"
-                src="./assets/Subtract2.png"
-                alt=""
-              />
-            </div>
-            <div class="card d-flex hov">
-              <img src="./assets/cards/card3.png" alt="" />
-              <div class="content">
-                <p class="p" data-translate="service3_title">
-                  Premier Pool Construction
-                </p>
-                <p data-translate="service3_desc">
-                  We specialize in modern pool designs using premium materials
-                  to ensure both aesthetic beauty and structural durability.
-                </p>
+              <div class="card2 hov position-relative d-flex">
+                <img
+                  class="topleft position-absolute top-0"
+                  src="./assets/Subtract.png"
+                  alt=""
+                />
+                <img class="imgC" src="./assets/cards/card2.png" alt="" />
+                <div class="content">
+                  <p class="p" data-translate="service2_title">
+                    Expert & Certified Team
+                  </p>
+                  <p data-translate="service2_desc">
+                    Our team consists of highly skilled engineers and
+                    technicians with years of experience in pool construction
+                    and management.
+                  </p>
+                </div>
+                <img
+                  class="bottomRight position-absolute bottom-0"
+                  src="./assets/Subtract2.png"
+                  alt=""
+                />
+              </div>
+              <div class="card d-flex hov">
+                <img src="./assets/cards/card3.png" alt="" />
+                <div class="content">
+                  <p class="p" data-translate="service3_title">
+                    Premier Pool Construction
+                  </p>
+                  <p data-translate="service3_desc">
+                    We specialize in modern pool designs using premium materials
+                    to ensure both aesthetic beauty and structural durability.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -331,123 +600,137 @@
     </section>
 
     <!-- ------------------------------------------------------ section5---------------------------------------------------------------------------------- -->
-    <section class="section5 container" id="contact_us">
+    <section class="section5" id="contact_us">
       <div class="bg-img">
         <div class="op">
-          <div class="content">
-            <div
-              class="head d-flex pt-3 align-items-center justify-content-center"
-            >
-              <div class="border"></div>
-              <p data-translate="contact_us_title">Contact Us</p>
-              <div class="border"></div>
-            </div>
-          </div>
-
-          <div class="C d-flex justify-content-evenly">
-            <div class="cInfo">
+          <div class="container">
+            <div class="content">
               <div
-                class="cInfo1 d-flex flex-column align-items-center justify-content-evenly"
+                class="head d-flex pt-3 align-items-center justify-content-center"
               >
-                <i class="fa-solid fa-location-dot"></i>
-                <p class="title" data-translate="address_title">The Address</p>
-                <p class="sbtitle">
-                  9 Ibn Qutaiba St. 7th District Nasr City Behind the
-                  International Park
-                </p>
-                <p class="location" data-translate="find_on_maps">
-                  (Find us on Google Maps)
-                </p>
-              </div>
-              <div class="d-flex align-items-center justify-content-between">
-                <div
-                  class="cInfo2 d-flex flex-column align-items-center justify-content-center"
-                >
-                  <i class="fa-solid fa-phone"></i>
-                  <p class="title" data-translate="contact_title">Contact Us</p>
-                  <p class="sbtitle" data-translate="whatsapp_available">
-                    (WhatsApp Available)
-                  </p>
-                  <p class="num">01110626444</p>
-                  <p class="num">01115777344</p>
-                </div>
-                <div
-                  class="cInfo3 d-flex flex-column align-items-center justify-content-center"
-                >
-                  <i class="fa-regular fa-envelope"></i>
-                  <p class="title" data-translate="email_title">Email</p>
-                  <p class="sbtitle">info@paradise-masr.com</p>
-                </div>
+                <div class="border" id="border"></div>
+                <p data-translate="contact_us_title" id="Op">Contact Us</p>
+                <div class="border" id="border"></div>
               </div>
             </div>
 
-            <!-- ------------------------------- Form ------------------------------------ -->
-            <form
-              class="cForm d-flex flex-column"
-              action="https://formspree.io/f/xbdlnyep"
-              method="POST"
-            >
-              <!-- حقل الاسم -->
-              <div class="d-flex flex-column gap-2">
-                <label for="name" data-translate="name_label">Name</label>
-                <input
-                  type="text"
-                  id="name"
-                  name="الاسم"
-                  class="form-control"
-                  placeholder="Enter your Name"
-                  data-translate="name_placeholder"
-                  required
-                />
-              </div>
-
-              <!-- حقل التليفون -->
-              <div class="d-flex flex-column gap-2">
-                <label for="phone" data-translate="phone_label"
-                  >Phone Number</label
+            <div class="C d-flex justify-content-evenly flex-wrap">
+              <div class="cInfo " id="cInfo">
+                <div
+                  class="cInfo1 d-flex flex-column align-items-center justify-content-evenly"
+                  id="cInfo1"
                 >
-                <input
-                  type="text"
-                  id="phone"
-                  name="التليفون"
-                  class="form-control"
-                  placeholder="Enter your Number"
-                  data-translate="phone_placeholder"
-                  required
-                />
+                  <i class="fa-solid fa-location-dot"></i>
+                  <p class="title" data-translate="address_title">
+                    The Address
+                  </p>
+                  <p class="sbtitle">
+                    9 Ibn Qutaiba St. 7th District Nasr City Behind the
+                    International Park
+                  </p>
+                  <p class="location" data-translate="find_on_maps">
+                    (Find us on Google Maps)
+                  </p>
+                </div>
+                <div class="d-flex align-items-center justify-content-between gap-2 pb-4">
+                  <div
+                    class="cInfo2 d-flex flex-column align-items-center justify-content-center"
+                    id="cInfo2"
+                  >
+                    <i class="fa-solid fa-phone"></i>
+                    <p class="title" data-translate="contact_title">
+                      Contact Us
+                    </p>
+                    <p class="sbtitle" data-translate="whatsapp_available">
+                      (WhatsApp Available)
+                    </p>
+                    <p class="num">01110626444</p>
+                    <p class="num">01115777344</p>
+                  </div>
+                  <div
+                    class="cInfo3 d-flex flex-column align-items-center justify-content-center"
+                     id="cInfo5"
+                  >
+                    <i class="fa-regular fa-envelope"></i>
+                    <p class="title" data-translate="email_title">Email</p>
+                    <p class="sbtitle">info@paradise-masr.com</p>
+                  </div>
+                </div>
               </div>
 
-              <!-- حقل الرسالة -->
-              <div class="d-flex flex-column gap-2">
-                <label for="message" data-translate="message_label"
-                  >Message</label
-                >
-                <textarea
-                  name="الرسالة"
-                  id="message"
-                  class="form-control"
-                  placeholder="Enter Your Message..."
-                  style="height: 244px"
-                  data-translate="message_placeholder"
-                  required
-                ></textarea>
-              </div>
-
-              <!-- زر الإرسال -->
-              <button
-                class="btn btn-primary col-12"
-                type="submit"
-                id="btnSub"
-                data-translate="send_button"
+              <!-- ------------------------------- Form ------------------------------------ -->
+              <form
+                class="cForm d-flex flex-column"
+                action="https://formspree.io/f/xbdlnyep"
+                method="POST"
               >
-                Send Message
-              </button>
-            </form>
+                <!-- حقل الاسم -->
+                <div class="d-flex flex-column gap-2">
+                  <label for="name" data-translate="name_label">Name</label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="الاسم"
+                    class="form-control"
+                    placeholder="Enter your Name"
+                    data-translate="name_placeholder"
+                    required
+                  />
+                </div>
+
+                <!-- حقل التليفون -->
+                <div class="d-flex flex-column gap-2">
+                  <label for="phone" data-translate="phone_label"
+                    >Phone Number</label
+                  >
+                  <input
+                    type="text"
+                    id="phone"
+                    name="التليفون"
+                    class="form-control"
+                    placeholder="Enter your Number"
+                    data-translate="phone_placeholder"
+                    required
+                  />
+                </div>
+
+                <!-- حقل الرسالة -->
+                <div class="d-flex flex-column gap-2">
+                  <label for="message" data-translate="message_label"
+                    >Message</label
+                  >
+                  <textarea
+                    name="الرسالة"
+                    id="message"
+                    class="form-control"
+                    placeholder="Enter Your Message..."
+                    style="height: 244px"
+                    data-translate="message_placeholder"
+                    required
+                  ></textarea>
+                </div>
+
+                <!-- زر الإرسال -->
+                <button
+                  class="btn btn-primary col-12"
+                  type="submit"
+                  id="btnSub"
+                  data-translate="send_button"
+                >
+                  Send Message
+                </button>
+              </form>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
     <script>
       // -----------------------------------------------------
       // نظام الترجمة واللغة
@@ -709,11 +992,15 @@
       // السلايدر (متبقي كما هو)
       // -----------------------------------------------------
       const images = [
-        { id: 1, url: "./assets/slider.jpg" },
-        { id: 2, url: "./assets/slider.jpg" },
-        { id: 3, url: "./assets/slider.jpg" },
-        { id: 4, url: "./assets/slider.jpg" },
-        { id: 5, url: "./assets/slider.jpg" },
+        { id: 1, url: "./assets/slider/slider1.png" },
+        { id: 2, url: "./assets/slider/slider2.png" },
+        { id: 3, url: "./assets/slider/slider3.png" },
+        { id: 4, url: "./assets/slider/slider4.png" },
+        { id: 5, url: "./assets/slider/slider5.png" },
+        { id: 6, url: "./assets/slider/slider6.jpg" },
+        { id: 7, url: "./assets/slider/slider7.png" },
+        { id: 8, url: "./assets/slider/slider8.png" },
+        { id: 9, url: "./assets/slider/slider9.png" },
       ];
 
       const slider = document.getElementById("slider");
