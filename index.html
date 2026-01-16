@@ -4,6 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Paradise</title>
+    <style>
+      /* CSS for hiding English-only images */
+      .english-only {
+        display: block;
+      }
+
+      .arabic-font .english-only {
+        display: none !important;
+      }
+      
+      /* RTL direction for Arabic */
+      [dir="rtl"] {
+        text-align: right;
+      }
+    </style>
     <link rel="stylesheet" href="./style.css" />
     <link
       rel="stylesheet"
@@ -37,7 +52,7 @@
       </div>
     </a>
     <header>
-      <div class="top-header bg-black" >
+      <div class="top-header" >
         <div class="container d-flex gap-3 px-4 " id="fuo">
           <p data-translate="follow_us"id="fu">Follow Us On:</p>
           <div class="icons" id="icons">
@@ -563,7 +578,7 @@
               </div>
               <div class="card2 hov position-relative d-flex " id="card">
                 <img
-                  class="topleft position-absolute top-0"
+                  class="topleft position-absolute top-0 english-only"
                   src="./assets/Subtract.png"
                   alt=""
                 />
@@ -579,7 +594,7 @@
                   </p>
                 </div>
                 <img
-                  class="bottomRight position-absolute bottom-0"
+                  class="bottomRight position-absolute bottom-0 english-only"
                   src="./assets/Subtract2.png"
                   alt=""
                 />
@@ -934,6 +949,9 @@
 
           // تحديث كل النصوص
           this.updateAllTexts();
+          
+          // إخفاء/إظهار الصور الإنجليزية
+          this.toggleEnglishOnlyImages();
         },
 
         updateAllTexts() {
@@ -955,6 +973,18 @@
             }
           });
         },
+
+        // دالة جديدة لإخفاء/إظهار الصور الإنجليزية
+        toggleEnglishOnlyImages() {
+          const englishOnlyImages = document.querySelectorAll('.english-only');
+          englishOnlyImages.forEach(img => {
+            if (this.currentLang === 'ar') {
+              img.style.display = 'none';
+            } else {
+              img.style.display = 'block';
+            }
+          });
+        }
       };
 
       // تشغيل نظام اللغة عند تحميل الصفحة
