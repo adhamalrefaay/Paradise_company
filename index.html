@@ -70,7 +70,6 @@
           class="d-none d-md-flex"
         />
 
-        <!-- ------------------------------------------------- collapse ------------------------------------- -->
         <div
           class="d-flex align-items-end justify-content-between col-12 col-md-1 pe-1"
         >
@@ -283,11 +282,11 @@
               </div>
               <div class="d-flex d-md-none flex-column">
                 <div class="d-flex container gap-3 pb-5">
-                  <div class="img3 d-block d-md-none"></div>
-                  <div>
-                    <p
+                  <div class="img3 col-6 d-block d-md-none"></div>
+                  <div class="col-12">
+                    <p 
                       style="
-                        width: 180px;
+                        width: 50%;
                         height: 120px;
                         font-family: Inter;
                         font-weight: 400;
@@ -305,7 +304,7 @@
                     <p
                       style="
                         padding-top: 24px;
-                        width: 180px;
+                        width: 50%;
                         height: 105px;
 
                         font-family: Inter;
@@ -474,16 +473,20 @@
               <div class="slider" id="slider"></div>
             </div>
 
-            <div class="d-flex align-items-center justify-content-center gap-2">
-              <div class="border"></div>
-              <div class="gCircle"></div>
-              <div
-                class="BCircle d-flex align-items-center justify-content-center"
-              >
-                <div class="bCircle"></div>
-              </div>
-              <div class="gCircle"></div>
-              <div class="border"></div>
+            <div
+              class="slider-controls d-flex flex-column align-items-center gap-3"
+            >
+            
+
+              <!-- هنا هضيف الـ dots -->
+               <div class="d-flex align-items-center justify-content-center">
+
+                 <div class="border" id="border"></div>
+               <div class="slider-dots d-flex gap-2 p-2 mb-2">
+                 <!-- الـ dots هتتضاف تلقائي بالجافاسكريبت -->
+               </div>
+                <div class="border" id="border"></div>
+               </div>
             </div>
           </div>
         </div>
@@ -615,7 +618,7 @@
             </div>
 
             <div class="C d-flex justify-content-evenly flex-wrap">
-              <div class="cInfo " id="cInfo">
+              <div class="cInfo" id="cInfo">
                 <div
                   class="cInfo1 d-flex flex-column align-items-center justify-content-evenly"
                   id="cInfo1"
@@ -632,7 +635,9 @@
                     (Find us on Google Maps)
                   </p>
                 </div>
-                <div class="d-flex align-items-center justify-content-between gap-2 pb-4">
+                <div
+                  class="d-flex align-items-center justify-content-between gap-2 pb-4"
+                >
                   <div
                     class="cInfo2 d-flex flex-column align-items-center justify-content-center"
                     id="cInfo2"
@@ -649,7 +654,7 @@
                   </div>
                   <div
                     class="cInfo3 d-flex flex-column align-items-center justify-content-center"
-                     id="cInfo5"
+                    id="cInfo5"
                   >
                     <i class="fa-regular fa-envelope"></i>
                     <p class="title" data-translate="email_title">Email</p>
@@ -732,6 +737,18 @@
       crossorigin="anonymous"
     ></script>
     <script>
+
+
+
+
+
+
+
+
+
+
+
+
       // -----------------------------------------------------
       // نظام الترجمة واللغة
       // -----------------------------------------------------
@@ -988,66 +1005,164 @@
 
       observer.observe(document.querySelector(".stats-container"));
 
-      // -----------------------------------------------------
-      // السلايدر (متبقي كما هو)
-      // -----------------------------------------------------
-      const images = [
-        { id: 1, url: "./assets/slider/slider1.png" },
-        { id: 2, url: "./assets/slider/slider2.png" },
-        { id: 3, url: "./assets/slider/slider3.png" },
-        { id: 4, url: "./assets/slider/slider4.png" },
-        { id: 5, url: "./assets/slider/slider5.png" },
-        { id: 6, url: "./assets/slider/slider6.jpg" },
-        { id: 7, url: "./assets/slider/slider7.png" },
-        { id: 8, url: "./assets/slider/slider8.png" },
-        { id: 9, url: "./assets/slider/slider9.png" },
-      ];
+     // -----------------------------------------------------
+// السلايدر مع الـ Dots
+// -----------------------------------------------------
+const images = [
+  { id: 1, url: "./assets/slider/slider1.png" },
+  { id: 2, url: "./assets/slider/slider2.png" },
+  { id: 3, url: "./assets/slider/slider3.png" },
+  { id: 4, url: "./assets/slider/slider4.png" },
+  { id: 5, url: "./assets/slider/slider5.png" },
+  { id: 6, url: "./assets/slider/slider6.jpg" },
+  { id: 7, url: "./assets/slider/slider7.png" },
+  { id: 8, url: "./assets/slider/slider8.png" },
+  { id: 9, url: "./assets/slider/slider9.png" },
+];
 
-      const slider = document.getElementById("slider");
-      let currentIndex = 0;
-      let totalSlides = images.length;
-      let visibleSlides = 3;
-      let slideWidth = 426;
-      let slideMargin = 5;
-      let totalWidth = slideWidth + slideMargin * 2;
+const slider = document.getElementById("slider");
+const sliderDots = document.querySelector(".slider-dots");
+let currentIndex = 0;
+let totalSlides = images.length;
+let visibleSlides = 3;
+let slideWidth = 426;
+let slideMargin = 5;
+let totalWidth = slideWidth + slideMargin * 2;
+let autoSlideInterval;
+let dots = [];
 
-      function initSlider() {
-        images.forEach((image) => {
-          const slide = document.createElement("div");
-          slide.className = "slide";
-          slide.innerHTML = `<img src="${image.url}" alt="">`;
-          slider.appendChild(slide);
-        });
-        startAutoSlide();
-        updateSliderPosition();
-      }
+function initSlider() {
+  // تنظيف السلايدر لو فيه حاجة
+  slider.innerHTML = '';
+  
+  // إضافة السلايدات
+  images.forEach((image) => {
+    const slide = document.createElement("div");
+    slide.className = "slide";
+    slide.innerHTML = `<img src="${image.url}" alt="Project ${image.id}">`;
+    slider.appendChild(slide);
+  });
+  
+  // إنشاء الـ dots
+  createDots();
+  
+  // بدء السلايدر
+  startAutoSlide();
+  updateSliderPosition();
+  updateDots();
+}
 
-      function updateSliderPosition() {
-        let position;
-        if (currentIndex === 0) {
-          position = 0;
-        } else if (currentIndex >= totalSlides - visibleSlides) {
-          position = -(totalSlides - visibleSlides) * totalWidth;
-        } else {
-          position = -currentIndex * totalWidth;
-        }
-        slider.style.transform = `translateX(${position}px)`;
-      }
+function createDots() {
+  sliderDots.innerHTML = '';
+  dots = [];
+  
+  // عدد الـ dots حسب عدد الصور
+  const totalDots = Math.ceil(totalSlides / visibleSlides);
+  
+  for (let i = 0; i < totalDots; i++) {
+    const dot = document.createElement("div");
+    dot.className = "dot";
+    dot.dataset.index = i;
+    
+    dot.addEventListener("click", () => {
+      goToSlide(i * visibleSlides);
+    });
+    
+    sliderDots.appendChild(dot);
+    dots.push(dot);
+  }
+}
 
-      function nextSlide() {
-        if (currentIndex < totalSlides - 1) {
-          currentIndex++;
-        } else {
-          currentIndex = 0;
-        }
-        updateSliderPosition();
-      }
+function updateSliderPosition() {
+  let position;
+  
+  // حساب الموضع بناءً على currentIndex
+  if (currentIndex >= totalSlides - visibleSlides) {
+    position = -(totalSlides - visibleSlides) * totalWidth;
+  } else {
+    position = -currentIndex * totalWidth;
+  }
+  
+  slider.style.transform = `translateX(${position}px)`;
+  updateDots();
+}
 
-      function startAutoSlide() {
-        setInterval(nextSlide, 3000);
-      }
+function updateDots() {
+  // حساب أي dot يكون active
+  const activeDotIndex = Math.floor(currentIndex / visibleSlides);
+  
+  dots.forEach((dot, index) => {
+    if (index === activeDotIndex) {
+      dot.classList.add("active");
+    } else {
+      dot.classList.remove("active");
+    }
+  });
+}
 
-      document.addEventListener("DOMContentLoaded", initSlider);
+function nextSlide() {
+  if (currentIndex < totalSlides - visibleSlides) {
+    currentIndex += 1; // تحريك سلايد واحدة فقط
+  } else {
+    currentIndex = 0; // العودة للبداية
+  }
+  
+  // إذا وصلنا للنهاية، نرجع للبداية
+  if (currentIndex > totalSlides - visibleSlides) {
+    currentIndex = 0;
+  }
+  
+  updateSliderPosition();
+}
+
+function goToSlide(index) {
+  currentIndex = index;
+  if (currentIndex > totalSlides - visibleSlides) {
+    currentIndex = totalSlides - visibleSlides;
+  }
+  
+  updateSliderPosition();
+  resetAutoSlide();
+}
+
+function startAutoSlide() {
+  autoSlideInterval = setInterval(nextSlide, 3000);
+}
+
+function stopAutoSlide() {
+  clearInterval(autoSlideInterval);
+}
+
+function resetAutoSlide() {
+  stopAutoSlide();
+  startAutoSlide();
+}
+
+// إضافة events للسلايدر للتوقف عند الهوفر
+slider.addEventListener("mouseenter", stopAutoSlide);
+slider.addEventListener("mouseleave", startAutoSlide);
+
+// تحجيم السلايدر مع تغيير حجم الشاشة
+function handleResize() {
+  if (window.innerWidth <= 768) {
+    visibleSlides = 1;
+    slideWidth = slider.clientWidth || 300;
+  } else {
+    visibleSlides = 3;
+    slideWidth = 426;
+  }
+  
+  totalWidth = slideWidth + slideMargin * 2;
+  updateSliderPosition();
+  createDots(); // إعادة إنشاء dots بناءً على visibleSlides الجديد
+}
+
+window.addEventListener("resize", handleResize);
+
+document.addEventListener("DOMContentLoaded", () => {
+  initSlider();
+  handleResize(); // تحديد visibleSlides بناءً على حجم الشاشة الأولي
+});
     </script>
   </body>
 </html>

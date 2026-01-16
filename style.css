@@ -1121,3 +1121,175 @@ html[dir="rtl"] .describton {
 html[dir="rtl"] .btn {
   text-align: center;
 }
+
+/* -------------------------------- slider ------------------------------ */
+
+.slider-container {
+  position: relative;
+  width: 1280px; /* 426*3 = 1278 تقريباً + هوامش بسيطة */
+  height: 340px; /* تعديل الارتفاع */
+  overflow: hidden;
+  border-radius: 12px;
+  padding: 10px;
+  margin: 0 auto; /* توسيط الكونتينر */
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.8s ease-in-out;
+  height: 100%;
+  width: 100%;
+}
+
+.slide {
+  flex: 0 0 426px;
+  height: 100%; /* تغيير من 320px إلى 100% */
+  border-radius: 12px; /* زيادة نصف القطر */
+  opacity: 1;
+  margin: 0 5px;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25); /* زيادة الظل */
+}
+
+.slide:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* تغطية المساحة بالكامل */
+  border-radius: 10px; /* زوايا مدورة */
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.slide:hover img {
+  transform: scale(1.05); /* تكبير بسيط عند الهوفر */
+}
+
+/* تحسينات للشاشات الصغيرة */
+@media (max-width: 1300px) {
+  .slider-container {
+    width: 90%;
+    max-width: 1000px;
+    height: 300px;
+  }
+  
+  .slide {
+    flex: 0 0 calc(33.333% - 10px); /* تقسيم متجاوب */
+  }
+}
+
+@media (max-width: 992px) {
+  .slider-container {
+    width: 95%;
+    height: 280px;
+  }
+  
+  .slide {
+    flex: 0 0 calc(50% - 10px); /* عرض صورتين في الموبايل الكبير */
+  }
+}
+
+@media (max-width: 768px) {
+  .slider-container {
+    width: 100%;
+    height: 250px;
+    padding: 8px;
+    border-radius: 8px;
+  }
+  
+  .slide {
+    flex: 0 0 calc(100% - 16px); /* صورة واحدة في الموبايل */
+    margin: 0 8px;
+    height: 100%;
+    border-radius: 10px;
+  }
+  
+  .slide img {
+    border-radius: 8px;
+  }
+}
+
+@media (max-width: 576px) {
+  .slider-container {
+    height: 220px;
+  }
+  
+  .slide {
+    flex: 0 0 calc(100% - 10px);
+    margin: 0 5px;
+  }
+}
+
+/* تحسينات للـ dots في الشاشات الصغيرة */
+@media (max-width: 768px) {
+  .slider-dots {
+    padding: 8px 0;
+  }
+  
+  .dot {
+    width: 10px;
+    height: 10px;
+  }
+  
+  .dot.active {
+    transform: scale(1.3);
+  }
+}
+
+/* تحسينات إضافية للعرض */
+.section3 .container {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* تحسين هامش الـ dots */
+.slider-controls {
+  margin-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* ===========================================
+   SLIDER DOTS STYLING
+=========================================== */
+
+.slider-dots {
+  padding: 10px 0;
+  margin-top: 5px;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #d3d4d7;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.dot:hover {
+  background-color: #a0a0a0;
+  transform: scale(1.1);
+}
+
+.dot.active {
+  background-color: #0f5c93;
+  transform: scale(1.2);
+  box-shadow: 0 0 5px rgba(15, 92, 147, 0.5);
+}
+
+/* تحسينات للعربية */
+html[dir="rtl"] .slider-dots {
+  flex-direction: row;
+}
+
+
+
