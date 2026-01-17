@@ -349,7 +349,7 @@
       font-size: 12px;
     }
   }
-  #cInfo5{
+  #cInfo5 {
     i {
       font-size: 30px;
     }
@@ -367,35 +367,35 @@
       text-align: center;
     }
   }
-  #card{
-    img{
+  #card {
+    img {
       width: 60px;
       height: 60px;
     }
-    .content{
-      p{
+    .content {
+      p {
         width: 100%;
         font-size: 12px;
       }
     }
   }
-  
-  #fu{
+
+  #fu {
     font-size: 14px;
   }
-  #ti{
+  #ti {
     font-size: 12px;
   }
-  #languageToggle{
+  #languageToggle {
     font-size: 14px;
   }
-  #icons{
+  #icons {
     margin-bottom: 12px;
   }
-  #fuo{
+  #fuo {
     align-items: center;
   }
-  .language-selector{
+  .language-selector {
     margin-top: 10px;
   }
 }
@@ -423,7 +423,8 @@
 .carousel-container {
   width: 81px; /* المقاس المطلوب */
   height: 35px; /* المقاس المطلوب */
-  margin: 0 auto;
+  margin-bottom: -30px;
+  margin-top: -30px;
   overflow: hidden;
   position: relative;
   border-radius: 16px; /* الزوايا المدورة */
@@ -1209,7 +1210,7 @@ html[dir="rtl"] .btn {
     max-width: 1000px;
     height: 300px;
   }
-  
+
   .slide {
     flex: 0 0 calc(33.333% - 10px); /* تقسيم متجاوب */
   }
@@ -1220,7 +1221,7 @@ html[dir="rtl"] .btn {
     width: 95%;
     height: 280px;
   }
-  
+
   .slide {
     flex: 0 0 calc(50% - 10px); /* عرض صورتين في الموبايل الكبير */
   }
@@ -1233,14 +1234,14 @@ html[dir="rtl"] .btn {
     padding: 8px;
     border-radius: 8px;
   }
-  
+
   .slide {
     flex: 0 0 calc(100% - 16px); /* صورة واحدة في الموبايل */
     margin: 0 8px;
     height: 100%;
     border-radius: 10px;
   }
-  
+
   .slide img {
     border-radius: 8px;
   }
@@ -1250,7 +1251,7 @@ html[dir="rtl"] .btn {
   .slider-container {
     height: 220px;
   }
-  
+
   .slide {
     flex: 0 0 calc(100% - 10px);
     margin: 0 5px;
@@ -1262,12 +1263,12 @@ html[dir="rtl"] .btn {
   .slider-dots {
     padding: 8px 0;
   }
-  
+
   .dot {
     width: 10px;
     height: 10px;
   }
-  
+
   .dot.active {
     transform: scale(1.3);
   }
@@ -1322,5 +1323,78 @@ html[dir="rtl"] .slider-dots {
   flex-direction: row;
 }
 
+footer {
+  padding-top: 120px;
+  background-color: #deedf7;
+  color: #6f6c90;
+}
+.img {
+  width: 60px;
+  height: 60px;
+}
+.borderf {
+  height: 2px;
 
+  background-color: #d9dbe9;
+}
+.f {
+  padding-bottom: 100px;
+}
+.iconss {
+  i {
+    font-size: 20px;
+    color: #063969;
+  }
+  i:hover {
+    color: #0f5c93;
+  }
+}
+.bold {
+  font-family: inter;
+  font-weight: 700;
+  font-size: 20px;
+  color: #170f49;
+}
+.aa {
+  font-family: inter;
+  font-weight: 400;
+  font-size: 16px;
+  color: #6f6c90;
+}
+#footer {
+  padding-top: 30px;
+  .contentf {
+    p {
+      font-family: inter;
+      font-weight: 700;
+      font-size: 18px;
+    }
+    nav {
+      a {
+        font-weight: 400;
+        font-size: 12px;
+      }
+    }
+  }
+}
+.boldf {
+  font-family: inter;
+  font-weight: 700;
+  font-size: 18px;
+  color: #170f49;
+}
+#ti {
+  font-size: 16px;
+}
 
+.bootomi {
+  width: 40px;
+  height: 40px;
+}
+.psm {
+  font-family: Inter;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 12px;
+ color: #696767;
+}

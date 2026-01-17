@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -13,7 +13,7 @@
       .arabic-font .english-only {
         display: none !important;
       }
-      
+
       /* RTL direction for Arabic */
       [dir="rtl"] {
         text-align: right;
@@ -52,9 +52,9 @@
       </div>
     </a>
     <header>
-      <div class="top-header" >
-        <div class="container d-flex gap-3 px-4 " id="fuo">
-          <p data-translate="follow_us"id="fu">Follow Us On:</p>
+      <div class="top-header">
+        <div class="container d-flex gap-3 px-4" id="fuo">
+          <p data-translate="follow_us" id="fu">Follow Us On:</p>
           <div class="icons" id="icons">
             <a href=""><i class="fa-brands fa-facebook-f" id="ti"></i></a>
             <a href=""><i class="fa-brands fa-instagram" id="ti"></i></a>
@@ -70,7 +70,7 @@
               class="btn btn-link p-0 ms-1 text-decoration-none"
               style="color: #253c62"
             >
-              <span id="currentLanguage">English</span>
+              <span id="currentLanguage">العربية</span>
               <i class="fa-solid fa-angle-down ms-1"></i>
             </button>
           </div>
@@ -140,8 +140,8 @@
             </div>
             <a
               href="#contact_us"
-              class="btn btn-info text-white rounded-4 d-none d-md-flex align-items-center justify-content-center text-decoration-none contact-btn"
-              style="background-color: #00a8e8"
+              class="p-2 text-white rounded-4 d-none d-md-flex align-items-center justify-content-center text-decoration-none contact-btn"
+              style="background-color: #1077bd"
               data-translate="contact_us"
             >
               Contact Us
@@ -225,9 +225,9 @@
             >
               <a
                 href="#contact_us"
-                class="btn btn-info text-white rounded-3 p-2 d-flex d-md-none align-items-center justify-content-center btnhero text-decoration-none text-center text-md-start"
+                class="text-white rounded-3 col-3 d-flex d-md-none align-items-center justify-content-center btnhero text-decoration-none text-center text-md-start"
                 style="
-                  background-color: #00a8e8;
+                  background-color: #1077bd;
                   text-decoration: none;
                   width: 94px;
                   height: 32px;
@@ -244,8 +244,9 @@
             </div>
             <a
               href="#contact_us"
-              class="btn btn-info text-white rounded-3 p-2 d-none d-md-block align-items-center justify-content-center btnhero text-decoration-none text-center text-md-start"
+              class="text-white rounded-3 py-2 px-3 d-none d-md-block align-items-center justify-content-center btnhero text-decoration-none text-center text-md-start"
               data-translate="contact_us"
+              style="background-color: #1077bd"
             >
               Contact Us
             </a>
@@ -261,7 +262,7 @@
           <div class="container">
             <div class="text-center c">
               <a href="#our_projects"
-                ><img src="./assets/ourProject.png" alt=""
+                ><img src="./assets/ourProject.svg" alt=""
               /></a>
             </div>
             <div class="smTitle d-flex d-md-none flex-column">
@@ -274,6 +275,7 @@
                   font-size: 12px;
                   color: #0f5c93;
                 "
+                data-translate="about_us_title"
               >
                 About Us
               </p>
@@ -286,6 +288,7 @@
                   font-size: 24px;
                   color: #063969;
                 "
+                data-translate="who_we_are"
               >
                 Who We Are
               </p>
@@ -295,11 +298,11 @@
                 <div class="img1 me-2"></div>
                 <div class="img2 mt-5"></div>
               </div>
-              <div class="d-flex d-md-none flex-column col-12" >
+              <div class="d-flex d-md-none flex-column col-12">
                 <div class="d-flex container gap-3 pb-5">
                   <div class="img3 col-6 d-block d-md-none"></div>
                   <div class="">
-                    <p 
+                    <p
                       style="
                         width: 100%;
                         height: 120px;
@@ -310,11 +313,9 @@
                         color: #253c62cc;
                         padding-bottom: 24px;
                       "
+                      data-translate="about_text1"
                     >
-                      Paradise is a specialized company in designing,
-                      constructing, and maintaining all types of swimming pools,
-                      water lagoons, and fountains, with a commitment to the
-                      highest quality standards.
+                      Paradise is a specialized company in designing, constructing, and maintaining all types of swimming pools, water lagoons, and fountains, with a commitment to the highest quality standards.
                     </p>
                     <p
                       style="
@@ -328,10 +329,9 @@
                         font-size: 12px;
                         color: #253c62cc;
                       "
+                      data-translate="about_text2"
                     >
-                      We specialize in the construction, maintenance, and water
-                      treatment of swimming pools, and we are an authorized
-                      distributor for leading American and European brands.
+                      We specialize in the construction, maintenance, and water treatment of swimming pools, and we are an authorized distributor for leading American and European brands.
                     </p>
                   </div>
                 </div>
@@ -404,15 +404,10 @@
                 <p class="sbtitle" data-translate="about_us_title">About Us</p>
                 <p class="title" data-translate="who_we_are">Who We Are</p>
                 <p data-translate="about_text1">
-                  Paradise is a specialized company in designing, constructing,
-                  and maintaining all types of swimming pools, water lagoons,
-                  and fountains, with a commitment to the highest quality
-                  standards.
+                  Paradise is a specialized company in designing, constructing, and maintaining all types of swimming pools, water lagoons, and fountains, with a commitment to the highest quality standards.
                 </p>
                 <p data-translate="about_text2">
-                  We specialize in the construction, maintenance, and water
-                  treatment of swimming pools, and we are an authorized
-                  distributor for leading American and European brands.
+                  We specialize in the construction, maintenance, and water treatment of swimming pools, and we are an authorized distributor for leading American and European brands.
                 </p>
                 <div class="companie d-flex flex-wrap gap-4">
                   <img src="./assets/brands/brand1.png" alt="" />
@@ -491,17 +486,14 @@
             <div
               class="slider-controls d-flex flex-column align-items-center gap-3"
             >
-            
-
               <!-- هنا هضيف الـ dots -->
-               <div class="d-flex align-items-center justify-content-center">
-
-                 <div class="border" id="border"></div>
-               <div class="slider-dots d-flex gap-2 p-2 mb-2">
-                 <!-- الـ dots هتتضاف تلقائي بالجافاسكريبت -->
-               </div>
+              <div class="d-flex align-items-center justify-content-center">
                 <div class="border" id="border"></div>
-               </div>
+                <div class="slider-dots d-flex gap-2 p-2 mb-2">
+                  <!-- الـ dots هتتضاف تلقائي بالجافاسكريبت -->
+                </div>
+                <div class="border" id="border"></div>
+              </div>
             </div>
           </div>
         </div>
@@ -531,14 +523,9 @@
 
             <div class="d-flex container d-md-none flex-column">
               <div>
-                <p id="wc">why Choose Us</p>
-                <p id="ap">
-                  At Paradise, we combine expertise, reliability, and excellence
-                  to deliver top-quality services. From precise construction to
-                  expert maintenance and water treatment, our dedicated team
-                  ensures every project meets the highest standards. We focus on
-                  efficiency, innovation, and complete client satisfaction,
-                  making Paradise the trusted choice for all your needs.
+                <p id="wc" data-translate="why_choose_us">Why Choose Us</p>
+                <p id="ap" data-translate="why_choose_text">
+                  At Paradise, we combine expertise, reliability, and excellence to deliver top-quality services. From precise construction to expert maintenance and water treatment, our dedicated team ensures every project meets the highest standards. We focus on efficiency, innovation, and complete client satisfaction, making Paradise the trusted choice for all your needs.
                 </p>
               </div>
               <img id="si" src="./assets/services.png" alt="" />
@@ -552,12 +539,7 @@
                   Why Choose Us
                 </p>
                 <p data-translate="why_choose_text">
-                  At Paradise, we combine expertise, reliability, and excellence
-                  to deliver top-quality services. From precise construction to
-                  expert maintenance and water treatment, our dedicated team
-                  ensures every project meets the highest standards. We focus on
-                  efficiency, innovation, and complete client satisfaction,
-                  making Paradise the trusted choice for all your needs.
+                  At Paradise, we combine expertise, reliability, and excellence to deliver top-quality services. From precise construction to expert maintenance and water treatment, our dedicated team ensures every project meets the highest standards. We focus on efficiency, innovation, and complete client satisfaction, making Paradise the trusted choice for all your needs.
                 </p>
               </div>
             </div>
@@ -570,13 +552,11 @@
                     Reliable Maintenance Services
                   </p>
                   <p data-translate="service1_desc">
-                    We provide comprehensive maintenance, water treatment, and
-                    quick repairs to keep your pool safe and crystal clear
-                    year-round.
+                    We provide comprehensive maintenance, water treatment, and quick repairs to keep your pool safe and crystal clear year-round.
                   </p>
                 </div>
               </div>
-              <div class="card2 hov position-relative d-flex " id="card">
+              <div class="card2 hov position-relative d-flex" id="card">
                 <img
                   class="topleft position-absolute top-0 english-only"
                   src="./assets/Subtract.png"
@@ -588,9 +568,7 @@
                     Expert & Certified Team
                   </p>
                   <p data-translate="service2_desc">
-                    Our team consists of highly skilled engineers and
-                    technicians with years of experience in pool construction
-                    and management.
+                    Our team consists of highly skilled engineers and technicians with years of experience in pool construction and management.
                   </p>
                 </div>
                 <img
@@ -606,8 +584,7 @@
                     Premier Pool Construction
                   </p>
                   <p data-translate="service3_desc">
-                    We specialize in modern pool designs using premium materials
-                    to ensure both aesthetic beauty and structural durability.
+                    We specialize in modern pool designs using premium materials to ensure both aesthetic beauty and structural durability.
                   </p>
                 </div>
               </div>
@@ -643,8 +620,7 @@
                     The Address
                   </p>
                   <p class="sbtitle">
-                    9 Ibn Qutaiba St. 7th District Nasr City Behind the
-                    International Park
+                    9 Ibn Qutaiba St. 7th District Nasr City Behind the International Park
                   </p>
                   <p class="location" data-translate="find_on_maps">
                     (Find us on Google Maps)
@@ -746,24 +722,120 @@
       </div>
     </section>
 
+    <footer class="d-none d-md-block">
+      <div
+        class="container d-flex f align-items-center justify-content-between"
+      >
+        <div class="left-f d-flex flex-column gap-4 col-2">
+          <img src="./assets/Logo.svg" alt="" class="img" />
+          <p data-translate="footer_tagline">Building quality. Maintaining excellence.</p>
+          <div class="iconss d-flex gap-3" id="icons">
+            <a href=""><i class="fa-brands fa-facebook-f" id="ti"></i></a>
+            <a href=""><i class="fa-brands fa-instagram" id="ti"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin" id="ti"></i></a>
+            <a href=""><i class="fa-brands fa-youtube" id="ti"></i></a>
+          </div>
+        </div>
+        <div class="right-f d-flex col-6 justify-content-end gap-5">
+          <div class="d-flex flex-column">
+            <p class="bold" data-translate="useful_links">Useful Links</p>
+            <nav class="d-flex flex-column gap-2">
+              <a href="#about_us" class="aa text-decoration-none" data-translate="about_us">About Us</a>
+              <a href="#contact_us" class="aa text-decoration-none" data-translate="contact_us">Contact us</a>
+              <a href="#our_projects" class="aa text-decoration-none" data-translate="our_projects">Our Projects</a>
+              <a href="#Services" class="aa text-decoration-none" data-translate="services">Services</a>
+            </nav>
+          </div>
+          <div class="d-flex flex-column align-items-end col-6">
+            <div
+              class="d-flex flex-column align-items-start justify-content-start h-100 gap-3"
+            >
+              <p class="bold" data-translate="contact_us_footer">Contact Us</p>
+              <div
+                class="d-flex justify-content-between gap-1 align-items-center"
+              >
+                <i class="fa-regular fa-envelope"></i> info@paradise-masr.com
+              </div>
+              <div
+                class="d-flex justify-content-between gap-1 align-items-center"
+              >
+                <i class="fa-solid fa-phone"></i>01110626444
+              </div>
+              <div
+                class="d-flex justify-content-between gap-1 align-items-center"
+              >
+                <i class="fa-solid fa-phone"></i>01115777344
+              </div>
+              <div class="d-flex justify-content-between gap-1">
+                <i class="fa-solid fa-location-dot"></i>9 Ibn Qutaiba St. 7th District Nasr City Behind the International Park
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="w-100 container borderf"></div>
+      <div
+        class="container d-flex justify-content-between align-items-center py-3"
+      >
+        <p data-translate="copyright">© Copyright 2026 Paradise</p>
+        <p>
+          <span data-translate="all_rights_reserved">All Rights Reserved |</span>
+          <span class="text-primary"
+            ><span data-translate="terms"> Terms and Conditions | Privacy Policy</span></span
+          >
+        </p>
+      </div>
+    </footer>
+    <footer class="d-block d-md-none" id="footer">
+      <div class="contentf container d-flex justify-content-between col-12">
+        <div class="left col-4">
+          <p class="boldf" data-translate="useful_links">Useful Links</p>
+          <nav class="d-flex flex-column gap-2">
+            <a href="#about_us" class="aa text-decoration-none" data-translate="about_us">About Us</a>
+            <a href="#contact_us" class="aa text-decoration-none" data-translate="contact_us">Contact us</a>
+            <a href="#our_projects" class="aa text-decoration-none" data-translate="our_projects">Our Projects</a>
+            <a href="#Services" class="aa text-decoration-none" data-translate="services">Services</a>
+          </nav>
+        </div>
+        <div class="rightf col-7 d-flex flex-column gap-2">
+          <p class="boldf" data-translate="contact_us_footer">Contact Us</p>
+          <a class="d-flex gap-1 align-items-center psm text-decoration-none" href="mailto:info@paradise-masr.com">
+            <i class="fa-regular fa-envelope"></i> info@paradise-masr.com
+          </a>
+          <div class="d-flex gap-1 align-items-center psm">
+            <i class="fa-solid fa-phone"></i>01110626444
+          </div>
+          <div class="d-flex gap-1 align-items-center psm">
+            <i class="fa-solid fa-phone"></i>01115777344
+          </div>
+          <div class="d-flex gap-1 psm">
+            <i class="fa-solid fa-location-dot "></i>9 Ibn Qutaiba St. 7th District Nasr City Behind the International Park
+          </div>
+        </div>
+      </div>
+      <div class="bootom container d-flex align-items-center justify-content-between pt-3">
+        <div class="d-flex align-items-center ">
+          <img src="./assets/Logo.svg" alt="" class="bootomi" />
+  
+          <div class="iconss d-flex gap-3 align-items-center ps-2" id="icons ">
+            <a href=""><i class="fa-brands fa-facebook-f" id="ti"></i></a>
+            <a href=""><i class="fa-brands fa-instagram" id="ti"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin" id="ti"></i></a>
+            <a href=""><i class="fa-brands fa-youtube" id="ti"></i></a>
+          </div>
+
+        </div>
+        <div class="d-flex align-items-center justify-content-center ">
+          <div class="psm text-center" data-translate="copyright">© Copyright 2026 Paradise</div>
+        </div>
+      </div>
+    </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"
     ></script>
     <script>
-
-
-
-
-
-
-
-
-
-
-
-
       // -----------------------------------------------------
       // نظام الترجمة واللغة
       // -----------------------------------------------------
@@ -837,6 +909,14 @@
             message_label: "Message",
             message_placeholder: "Enter Your Message...",
             send_button: "Send Message",
+
+            // Footer
+            footer_tagline: "Building quality. Maintaining excellence.",
+            useful_links: "Useful Links",
+            contact_us_footer: "Contact Us",
+            copyright: "© Copyright 2026 Paradise",
+            all_rights_reserved: "All Rights Reserved |",
+            terms: "Terms and Conditions | Privacy Policy"
           },
 
           ar: {
@@ -904,6 +984,14 @@
             message_label: "الرسالة",
             message_placeholder: "أدخل رسالتك...",
             send_button: "إرسال الرسالة",
+
+            // Footer
+            footer_tagline: "بناء الجودة. الحفاظ على التميز.",
+            useful_links: "روابط مفيدة",
+            contact_us_footer: "اتصل بنا",
+            copyright: "© حقوق النشر 2026 بارادايس",
+            all_rights_reserved: "جميع الحقوق محفوظة |",
+            terms: "الشروط والأحكام | سياسة الخصوصية"
           },
         },
 
@@ -928,7 +1016,6 @@
         updateToggleButton() {
           const toggleText = document.getElementById("currentLanguage");
           if (toggleText) {
-            // هنا التغيير: English يبقى مع الانجليزي، العربية مع العربي
             toggleText.textContent =
               this.currentLang === "en" ? "العربية" : "English";
           }
@@ -949,7 +1036,7 @@
 
           // تحديث كل النصوص
           this.updateAllTexts();
-          
+
           // إخفاء/إظهار الصور الإنجليزية
           this.toggleEnglishOnlyImages();
         },
@@ -965,7 +1052,7 @@
               ) {
                 element.setAttribute(
                   "placeholder",
-                  this.translations[this.currentLang][key]
+                  this.translations[this.currentLang][key],
                 );
               } else {
                 element.textContent = this.translations[this.currentLang][key];
@@ -976,15 +1063,15 @@
 
         // دالة جديدة لإخفاء/إظهار الصور الإنجليزية
         toggleEnglishOnlyImages() {
-          const englishOnlyImages = document.querySelectorAll('.english-only');
-          englishOnlyImages.forEach(img => {
-            if (this.currentLang === 'ar') {
-              img.style.display = 'none';
+          const englishOnlyImages = document.querySelectorAll(".english-only");
+          englishOnlyImages.forEach((img) => {
+            if (this.currentLang === "ar") {
+              img.style.display = "none";
             } else {
-              img.style.display = 'block';
+              img.style.display = "block";
             }
           });
-        }
+        },
       };
 
       // تشغيل نظام اللغة عند تحميل الصفحة
@@ -1035,164 +1122,164 @@
 
       observer.observe(document.querySelector(".stats-container"));
 
-     // -----------------------------------------------------
-// السلايدر مع الـ Dots
-// -----------------------------------------------------
-const images = [
-  { id: 1, url: "./assets/slider/slider1.png" },
-  { id: 2, url: "./assets/slider/slider2.png" },
-  { id: 3, url: "./assets/slider/slider3.png" },
-  { id: 4, url: "./assets/slider/slider4.png" },
-  { id: 5, url: "./assets/slider/slider5.png" },
-  { id: 6, url: "./assets/slider/slider6.jpg" },
-  { id: 7, url: "./assets/slider/slider7.png" },
-  { id: 8, url: "./assets/slider/slider8.png" },
-  { id: 9, url: "./assets/slider/slider9.png" },
-];
+      // -----------------------------------------------------
+      // السلايدر مع الـ Dots
+      // -----------------------------------------------------
+      const images = [
+        { id: 1, url: "./assets/slider/slider1.png" },
+        { id: 2, url: "./assets/slider/slider2.png" },
+        { id: 3, url: "./assets/slider/slider3.png" },
+        { id: 4, url: "./assets/slider/slider4.png" },
+        { id: 5, url: "./assets/slider/slider5.png" },
+        { id: 6, url: "./assets/slider/slider6.jpg" },
+        { id: 7, url: "./assets/slider/slider7.png" },
+        { id: 8, url: "./assets/slider/slider8.png" },
+        { id: 9, url: "./assets/slider/slider9.png" },
+      ];
 
-const slider = document.getElementById("slider");
-const sliderDots = document.querySelector(".slider-dots");
-let currentIndex = 0;
-let totalSlides = images.length;
-let visibleSlides = 3;
-let slideWidth = 426;
-let slideMargin = 5;
-let totalWidth = slideWidth + slideMargin * 2;
-let autoSlideInterval;
-let dots = [];
+      const slider = document.getElementById("slider");
+      const sliderDots = document.querySelector(".slider-dots");
+      let currentIndex = 0;
+      let totalSlides = images.length;
+      let visibleSlides = 3;
+      let slideWidth = 426;
+      let slideMargin = 5;
+      let totalWidth = slideWidth + slideMargin * 2;
+      let autoSlideInterval;
+      let dots = [];
 
-function initSlider() {
-  // تنظيف السلايدر لو فيه حاجة
-  slider.innerHTML = '';
-  
-  // إضافة السلايدات
-  images.forEach((image) => {
-    const slide = document.createElement("div");
-    slide.className = "slide";
-    slide.innerHTML = `<img src="${image.url}" alt="Project ${image.id}">`;
-    slider.appendChild(slide);
-  });
-  
-  // إنشاء الـ dots
-  createDots();
-  
-  // بدء السلايدر
-  startAutoSlide();
-  updateSliderPosition();
-  updateDots();
-}
+      function initSlider() {
+        // تنظيف السلايدر لو فيه حاجة
+        slider.innerHTML = "";
 
-function createDots() {
-  sliderDots.innerHTML = '';
-  dots = [];
-  
-  // عدد الـ dots حسب عدد الصور
-  const totalDots = Math.ceil(totalSlides / visibleSlides);
-  
-  for (let i = 0; i < totalDots; i++) {
-    const dot = document.createElement("div");
-    dot.className = "dot";
-    dot.dataset.index = i;
-    
-    dot.addEventListener("click", () => {
-      goToSlide(i * visibleSlides);
-    });
-    
-    sliderDots.appendChild(dot);
-    dots.push(dot);
-  }
-}
+        // إضافة السلايدات
+        images.forEach((image) => {
+          const slide = document.createElement("div");
+          slide.className = "slide";
+          slide.innerHTML = `<img src="${image.url}" alt="Project ${image.id}">`;
+          slider.appendChild(slide);
+        });
 
-function updateSliderPosition() {
-  let position;
-  
-  // حساب الموضع بناءً على currentIndex
-  if (currentIndex >= totalSlides - visibleSlides) {
-    position = -(totalSlides - visibleSlides) * totalWidth;
-  } else {
-    position = -currentIndex * totalWidth;
-  }
-  
-  slider.style.transform = `translateX(${position}px)`;
-  updateDots();
-}
+        // إنشاء الـ dots
+        createDots();
 
-function updateDots() {
-  // حساب أي dot يكون active
-  const activeDotIndex = Math.floor(currentIndex / visibleSlides);
-  
-  dots.forEach((dot, index) => {
-    if (index === activeDotIndex) {
-      dot.classList.add("active");
-    } else {
-      dot.classList.remove("active");
-    }
-  });
-}
+        // بدء السلايدر
+        startAutoSlide();
+        updateSliderPosition();
+        updateDots();
+      }
 
-function nextSlide() {
-  if (currentIndex < totalSlides - visibleSlides) {
-    currentIndex += 1; // تحريك سلايد واحدة فقط
-  } else {
-    currentIndex = 0; // العودة للبداية
-  }
-  
-  // إذا وصلنا للنهاية، نرجع للبداية
-  if (currentIndex > totalSlides - visibleSlides) {
-    currentIndex = 0;
-  }
-  
-  updateSliderPosition();
-}
+      function createDots() {
+        sliderDots.innerHTML = "";
+        dots = [];
 
-function goToSlide(index) {
-  currentIndex = index;
-  if (currentIndex > totalSlides - visibleSlides) {
-    currentIndex = totalSlides - visibleSlides;
-  }
-  
-  updateSliderPosition();
-  resetAutoSlide();
-}
+        // عدد الـ dots حسب عدد الصور
+        const totalDots = Math.ceil(totalSlides / visibleSlides);
 
-function startAutoSlide() {
-  autoSlideInterval = setInterval(nextSlide, 3000);
-}
+        for (let i = 0; i < totalDots; i++) {
+          const dot = document.createElement("div");
+          dot.className = "dot";
+          dot.dataset.index = i;
 
-function stopAutoSlide() {
-  clearInterval(autoSlideInterval);
-}
+          dot.addEventListener("click", () => {
+            goToSlide(i * visibleSlides);
+          });
 
-function resetAutoSlide() {
-  stopAutoSlide();
-  startAutoSlide();
-}
+          sliderDots.appendChild(dot);
+          dots.push(dot);
+        }
+      }
 
-// إضافة events للسلايدر للتوقف عند الهوفر
-slider.addEventListener("mouseenter", stopAutoSlide);
-slider.addEventListener("mouseleave", startAutoSlide);
+      function updateSliderPosition() {
+        let position;
 
-// تحجيم السلايدر مع تغيير حجم الشاشة
-function handleResize() {
-  if (window.innerWidth <= 768) {
-    visibleSlides = 1;
-    slideWidth = slider.clientWidth || 300;
-  } else {
-    visibleSlides = 3;
-    slideWidth = 426;
-  }
-  
-  totalWidth = slideWidth + slideMargin * 2;
-  updateSliderPosition();
-  createDots(); // إعادة إنشاء dots بناءً على visibleSlides الجديد
-}
+        // حساب الموضع بناءً على currentIndex
+        if (currentIndex >= totalSlides - visibleSlides) {
+          position = -(totalSlides - visibleSlides) * totalWidth;
+        } else {
+          position = -currentIndex * totalWidth;
+        }
 
-window.addEventListener("resize", handleResize);
+        slider.style.transform = `translateX(${position}px)`;
+        updateDots();
+      }
 
-document.addEventListener("DOMContentLoaded", () => {
-  initSlider();
-  handleResize(); // تحديد visibleSlides بناءً على حجم الشاشة الأولي
-});
+      function updateDots() {
+        // حساب أي dot يكون active
+        const activeDotIndex = Math.floor(currentIndex / visibleSlides);
+
+        dots.forEach((dot, index) => {
+          if (index === activeDotIndex) {
+            dot.classList.add("active");
+          } else {
+            dot.classList.remove("active");
+          }
+        });
+      }
+
+      function nextSlide() {
+        if (currentIndex < totalSlides - visibleSlides) {
+          currentIndex += 1; // تحريك سلايد واحدة فقط
+        } else {
+          currentIndex = 0; // العودة للبداية
+        }
+
+        // إذا وصلنا للنهاية، نرجع للبداية
+        if (currentIndex > totalSlides - visibleSlides) {
+          currentIndex = 0;
+        }
+
+        updateSliderPosition();
+      }
+
+      function goToSlide(index) {
+        currentIndex = index;
+        if (currentIndex > totalSlides - visibleSlides) {
+          currentIndex = totalSlides - visibleSlides;
+        }
+
+        updateSliderPosition();
+        resetAutoSlide();
+      }
+
+      function startAutoSlide() {
+        autoSlideInterval = setInterval(nextSlide, 3000);
+      }
+
+      function stopAutoSlide() {
+        clearInterval(autoSlideInterval);
+      }
+
+      function resetAutoSlide() {
+        stopAutoSlide();
+        startAutoSlide();
+      }
+
+      // إضافة events للسلايدر للتوقف عند الهوفر
+      slider.addEventListener("mouseenter", stopAutoSlide);
+      slider.addEventListener("mouseleave", startAutoSlide);
+
+      // تحجيم السلايدر مع تغيير حجم الشاشة
+      function handleResize() {
+        if (window.innerWidth <= 768) {
+          visibleSlides = 1;
+          slideWidth = slider.clientWidth || 300;
+        } else {
+          visibleSlides = 3;
+          slideWidth = 426;
+        }
+
+        totalWidth = slideWidth + slideMargin * 2;
+        updateSliderPosition();
+        createDots(); // إعادة إنشاء dots بناءً على visibleSlides الجديد
+      }
+
+      window.addEventListener("resize", handleResize);
+
+      document.addEventListener("DOMContentLoaded", () => {
+        initSlider();
+        handleResize(); // تحديد visibleSlides بناءً على حجم الشاشة الأولي
+      });
     </script>
   </body>
 </html>
