@@ -168,7 +168,7 @@
 /* -------------------------------------------- section1 ----------------------------------------------- */
 .section1 {
   .hero {
-    background-image: url("./assets/herobg.jpg");
+    background-image: url("./assets/herobg.webp");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -411,7 +411,7 @@
   }
 }
 .img3 {
-  background-image: url("./assets/about_us.png");
+  background-image: url("./assets/about_us.webp");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -481,7 +481,7 @@
 
 .section2 {
   .bg-img {
-    background-image: url("./assets/bgimage.jpg");
+    background-image: url("./assets/bgimage.webp");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -496,7 +496,7 @@
   .content {
     padding-bottom: 70px;
     .img1 {
-      background-image: url("./assets/about_us.png");
+      background-image: url("./assets/about_us.webp");
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
@@ -505,7 +505,7 @@
       border-radius: 11px;
     }
     .img2 {
-      background-image: url("./assets/about_us.png");
+      background-image: url("./assets/about_us.webp");
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
@@ -610,7 +610,7 @@
 
 .section3 {
   .bg-img {
-    background-image: url("./assets/bgimage.jpg");
+    background-image: url("./assets/bgimage.webp");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -723,7 +723,7 @@
 
 .section4 {
   .bg-img {
-    background-image: url("./assets/bgimage.jpg");
+    background-image: url("./assets/bgimage.webp");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -741,7 +741,7 @@
         width: 596px;
         height: 391px;
         border-radius: 16px;
-        background-image: url("./assets/services.png");
+        background-image: url("./assets/services.webp");
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -863,7 +863,7 @@
 
 .section5 {
   .bg-img {
-    background-image: url("./assets/bgimage.jpg");
+    background-image: url("./assets/bgimage.webp");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
