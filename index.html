@@ -88,7 +88,8 @@
         class="container d-flex navBar align-items-center justify-content-between"
       >
         <img
-          src="./assets/Logo.webp"
+          src="./assets/Logo.png"
+        
           alt="Paradise-logo"
           class="d-none d-md-flex"
         />
@@ -97,7 +98,7 @@
           class="d-flex align-items-end justify-content-between col-12 col-md-1 pe-1"
         >
           <img
-            src="./assets/Logo.webp"
+            src="./assets/Logo.png"
             alt="Paradise-logo"
             class="d-flex d-md-none"
           />
@@ -303,8 +304,8 @@
             </div>
             <div class="content d-flex">
               <div class="d-flex">
-                <div class="img1 me-2"></div>
-                <div class="img2 mt-5"></div>
+                <div class="img1 me-2 margin-image"></div>
+                <div class="img2 mt-5 margin-image"></div>
               </div>
               <div class="d-flex d-md-none flex-column col-12">
                 <div class="d-flex container gap-3 pb-5">
@@ -685,7 +686,7 @@
                   >
                     <i class="fa-regular fa-envelope"></i>
                     <p class="title" data-translate="email_title">Email</p>
-                    <p class="sbtitle">info@paradise-masr.com</p>
+                    <a href="mailto:info@paradise-masr.com" class="sbtitle text-decoration-none">info@paradise-masr.com</a>
                   </div>
                 </div>
               </div>
@@ -806,21 +807,22 @@
           </div>
           <div class="d-flex flex-column align-items-end col-6">
             <div
-              class="d-flex flex-column align-items-start justify-content-start h-100 gap-3"
+              class="d-flex flex-column align-items-start justify-content-start h-100"
             >
               <p class="bold" data-translate="contact_us_footer">Contact Us</p>
+              <div class="d-flex flex-column gap-3 justify-content-center align-content-start">
               <div
-                class="d-flex justify-content-between gap-1 align-items-center"
+                class="d-flex  gap-1 align-items-center"
               >
-                <i class="fa-regular fa-envelope"></i> info@paradise-masr.com
+            <a href="mailto:info@paradise-masr.com" class="text-decoration-none footercolor">   <i class="fa-regular fa-envelope"></i> info@paradise-masr.com</a> 
               </div>
               <div
-                class="d-flex justify-content-between gap-1 align-items-center"
+                class="d-flex  gap-1 align-items-center"
               >
                 <i class="fa-solid fa-phone"></i>01110626444
               </div>
               <div
-                class="d-flex justify-content-between gap-1 align-items-center"
+                class="d-flex gap-1 align-items-center"
               >
                 <i class="fa-solid fa-phone"></i>01115777344
               </div>
@@ -828,6 +830,7 @@
                 <i class="fa-solid fa-location-dot"></i>9 Ibn Qutaiba St. 7th
                 District Nasr City Behind the International Park
               </div>
+            </div>
             </div>
           </div>
         </div>

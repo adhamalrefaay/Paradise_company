@@ -123,6 +123,10 @@
     }
   }
 }
+[dir="rtl"] #margin-image {
+  margin-right: 8px;
+  margin-left: 200px;
+}
 .navBar {
   nav {
     gap: 64px;
@@ -138,8 +142,8 @@
     }
   }
   img {
-    width: 81px;
-    height: 80px;
+    width: 90px;
+    height: 90px;
   }
   .contact {
     .pIcon {
@@ -1397,4 +1401,8 @@ footer {
   font-style: Regular;
   font-size: 12px;
  color: #696767;
+}
+.footercolor{
+  
+  color: #696767;
 }
