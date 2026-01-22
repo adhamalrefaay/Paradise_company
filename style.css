@@ -1238,6 +1238,10 @@ html[dir="rtl"] .btn {
     padding: 8px;
     border-radius: 8px;
   }
+  #bigCard{
+    width: 100% !important;
+    margin-bottom: 20px !important;
+  }
 
   .slide {
     flex: 0 0 calc(100% - 16px); /* صورة واحدة في الموبايل */
@@ -1474,5 +1478,9 @@ footer {
   }
   form{
     width: 100% !important;
+  }
+    #bigCard{
+    width: 100% !important;
+    margin-bottom: 20px !important;
   }
 }
