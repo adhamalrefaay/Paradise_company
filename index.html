@@ -99,11 +99,11 @@
           </p>
         </div>
 
-        <nav class="d-none d-md-flex align-items-center justify-content-center">
-          <a href="#home">Home</a>
-          <a href="#about_us">About Us</a>
-          <a href="#our_projects">Our Projects</a>
-          <a href="#Services">Services</a>
+        <nav id="nav" class="d-none d-md-flex align-items-center justify-content-center">
+          <a id="anav" href="#home">Home</a>
+          <a id="anav" href="#about_us">About Us</a>
+          <a id="anav" href="#our_projects">Our Projects</a>
+          <a id="anav" href="#Services">Services</a>
         </nav>
         <div class="contact">
           <div class="d-flex gap-4">
@@ -114,7 +114,7 @@
                 ><i class="fa-solid fa-phone"></i
               ></a>
             </div>
-            <div class="details d-none d-md-flex flex-column">
+            <div class="details d-none d-lg-flex flex-column">
               <p>
                 <span class="pNum">Phone Number</span><br />
                 <span class="Num"
@@ -217,7 +217,7 @@
             </div>
             <a
               href="#contact_us"
-              class="text-white rounded-3 py-2 px-3 d-none d-md-block align-items-center justify-content-center btnhero text-decoration-none text-center text-md-start"
+              class="text-white rounded-3 py-2 px-3 d-none d-md-block align-items-center justify-content-center  text-decoration-none text-center text-md-start"
               style="background-color: #1077bd"
             >
               Contact Us
@@ -237,7 +237,7 @@
             /></a>
           </div>
           <div class="container wow bounceInUp">
-            <div class="smTitle d-flex d-md-none flex-column">
+            <div class="smTitle d-flex d-lg-none flex-column">
               <p
                 style="
                   text-align: center;
@@ -268,11 +268,12 @@
                 <div class="img1 me-2 margin-image"></div>
                 <div class="img2 mt-5 margin-image"></div>
               </div>
-              <div class="d-flex d-md-none flex-column col-12">
+              <div class="d-flex d-lg-none flex-column col-12">
                 <div class="d-flex container gap-3 pb-5">
-                  <div class="img3 col-6 d-block d-md-none"></div>
+                  <div class="img3  col-6 d-block d-lg-none" id="imgMid"></div>
                   <div class="">
                     <p
+                    id="pmid"
                       style="
                         width: 100%;
                         height: 120px;
@@ -290,6 +291,7 @@
                       highest quality standards.
                     </p>
                     <p
+                     id="pmid"
                       style="
                         padding-top: 24px;
                         width: 100%;
@@ -444,7 +446,7 @@
                 </div>
               </div>
               <div
-                class="about_us d-none d-md-flex flex-column align-items-start"
+                class="about_us d-none d-lg-flex flex-column align-items-start"
               >
                 <p class="sbtitle">About Us</p>
                 <p class="title">Who We Are</p>
@@ -544,7 +546,7 @@
                   font-family: Inter;
                   font-weight: 500;
                   font-style: Medium;
-                  font-size: 16px;
+                  font-size: 20px;
                 color: #253C62;
                 
 
@@ -556,6 +558,22 @@
         </div>
       </div>
     </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <!-- ------------------------------------------------------ section4---------------------------------------------------------------------------------- -->
 
@@ -576,7 +594,7 @@
 
             <!-- ---------------------------------------------------------- -->
 
-            <div class="d-flex container d-md-none flex-column">
+            <div class="d-flex container d-lg-none flex-column">
               <div>
                 <p id="wc">Why Choose Us</p>
                 <p id="ap">
@@ -592,7 +610,7 @@
             </div>
 
             <!-- --------------------------------------------------- -->
-            <div class="services d-none d-md-flex">
+            <div class="services d-none d-lg-flex">
               <div class="sImage"></div>
               <div class="details d-flex flex-column">
                 <p class="title">Why Choose Us</p>
@@ -607,12 +625,12 @@
               </div>
             </div>
 
-            <div class="cards d-flex flex-wrap flex-md-nowrap">
+            <div class="cards d-flex flex-wrap flex-lg-nowrap">
               <div class="card wow bounceInUp hov" id="card">
                 <img src="./assets/cards/card1.png" loading="lazy" alt="" />
                 <div class="content">
-                  <p class="p">Reliable Maintenance Services</p>
-                  <p>
+                  <p class="p" id="pmid">Reliable Maintenance Services</p>
+                  <p id="pmids">
                     We provide comprehensive maintenance, water treatment, and
                     quick repairs to keep your pool safe and crystal clear
                     year-round.
@@ -636,8 +654,8 @@
                   alt=""
                 />
                 <div class="content">
-                  <p class="p">Expert & Certified Team</p>
-                  <p>
+                  <p id="pmid" class="p">Expert & Certified Team</p>
+                  <p id="pmids">
                     Our team consists of highly skilled engineers and
                     technicians with years of experience in pool construction
                     and management.
@@ -653,8 +671,8 @@
               <div class="card wow bounceInUp d-flex hov" id="card">
                 <img src="./assets/cards/card3.png" loading="lazy" alt="" />
                 <div class="content">
-                  <p class="p">Premier Pool Construction</p>
-                  <p>
+                  <p id="pmid" class="p">Premier Pool Construction</p>
+                  <p id="pmids">
                     We specialize in modern pool designs using premium materials
                     to ensure both aesthetic beauty and structural durability.
                   </p>
@@ -969,13 +987,13 @@ https://cdn.jsdelivr.net/npm/wowjs@1.1.3/dist/wow.min.js
       // السلايدر مع الـ Dots
       // -----------------------------------------------------
       const images = [
-        { id: 1, url: "./assets/slider/slider1.webp" },
+        { id: 1, url: "./assets/gallery/image1.webp" },
         { id: 2, url: "./assets/slider/slider2.webp" },
         { id: 3, url: "./assets/slider/slider3.webp" },
         { id: 4, url: "./assets/slider/slider4.webp" },
         { id: 5, url: "./assets/slider/slider5.webp" },
         { id: 6, url: "./assets/slider/slider6.webp" },
-        { id: 7, url: "./assets/slider/slider7.webp" },
+        { id: 7, url: "./assets/gallery/image7.webp" },
         { id: 8, url: "./assets/slider/slider8.webp" },
         { id: 9, url: "./assets/slider/slider9.webp" },
       ];

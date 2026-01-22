@@ -102,11 +102,11 @@
           </p>
         </div>
 
-        <nav class="d-none d-md-flex align-items-center justify-content-center">
-          <a href="#home">الرئيسية</a>
-          <a href="#about_us">من نحن</a>
-          <a href="#our_projects">مشاريعنا</a>
-          <a href="#Services">خدماتنا</a>
+        <nav id="nav" class="d-none d-md-flex align-items-center justify-content-center">
+          <a id="ananv"  href="#home">الرئيسية</a>
+          <a id="ananv"  href="#about_us">من نحن</a>
+          <a  id="ananv" href="#our_projects">مشاريعنا</a>
+          <a id="ananv"  href="#Services">خدماتنا</a>
         </nav>
         <div class="contact">
           <div class="d-flex gap-4">
@@ -117,7 +117,7 @@
                 ><i class="fa-solid fa-phone"></i
               ></a>
             </div>
-            <div class="details d-none d-md-flex flex-column">
+            <div class="details d-none d-lg-flex flex-column">
               <p>
                 <span class="pNum">رقم الهاتف</span><br />
                 <span class="Num"
@@ -247,7 +247,7 @@
             /></a>
           </div>
           <div class="container wow bounceInUp">
-            <div class="smTitle d-flex d-md-none flex-column ">
+            <div class="smTitle d-flex d-lg-none flex-column ">
               <p
                 style="
                   text-align: center;
@@ -278,11 +278,11 @@
                 <div class="img1 me-2 margin-image"></div>
                 <div class="img2 mt-5 margin-image"></div>
               </div>
-              <div class="d-flex d-md-none flex-column col-12">
+              <div class="d-flex d-lg-none flex-column col-12">
                 <div class="d-flex container gap-3 pb-5">
-                  <div class="img3 col-6 d-block d-md-none"></div>
+                  <div class="img3 col-6 d-block d-lg-none" id="imgMid"></div>
                   <div class="">
-                    <p
+                    <p id="pmid"
                       style="
                         width: 100%;
                         height: 120px;
@@ -297,6 +297,7 @@
                       بارادايس هي شركة متخصصة في تصميم وبناء وصيانة جميع أنواع أحواض السباحة والبحيرات المائية والنوافير، مع الالتزام بأعلى معايير الجودة.
                     </p>
                     <p
+                    id="pmid"
                       style="
                         padding-top: 24px;
                         width: 100%;
@@ -377,7 +378,7 @@
                 </div>
               </div>
               <div
-                class="about_us d-none d-md-flex flex-column align-items-start"
+                class="about_us d-none d-lg-flex flex-column align-items-start"
               >
                 <p class="sbtitle">من نحن</p>
                 <p class="title">من نحن</p>
@@ -466,6 +467,19 @@
                 </div>
                 <div class="border" id="border"></div>
               </div>
+                <a
+                href="projects_arabic.html"
+                style="
+                  font-family: Inter;
+                  font-weight: 500;
+                  font-style: Medium;
+                  font-size: 20px;
+                color: #253C62;
+                
+
+                "
+                >اظهر كل مشاريعنا</a
+              >
             </div>
           </div>
         </div>
@@ -491,7 +505,7 @@
 
             <!-- ---------------------------------------------------------- -->
 
-            <div class="d-flex container d-md-none flex-column">
+            <div class="d-flex container d-lg-none flex-column">
               <div>
                 <p id="wc">لماذا تختارنا</p>
                 <p id="ap">
@@ -502,7 +516,7 @@
             </div>
 
             <!-- --------------------------------------------------- -->
-            <div class="services d-none d-md-flex">
+            <div class="services d-none d-lg-flex">
               <div class="sImage"></div>
               <div class="details d-flex flex-column">
                 <p class="title">لماذا تختارنا</p>
@@ -516,8 +530,8 @@
               <div class="card wow bounceInUp hov" id="card">
                 <img src="./assets/cards/card1.png" loading="lazy" alt="خدمات الصيانة" />
                 <div class="content">
-                  <p class="p">خدمات صيانة موثوقة</p>
-                  <p>
+                  <p class="p" id="pmid">خدمات صيانة موثوقة</p>
+                  <p id="pmids">
                     نقدم صيانة شاملة ومعالجة مياه وإصلاحات سريعة للحفاظ على حمام السباحة الخاص بك آمنًا وصافيًا على مدار العام.
                   </p>
                 </div>
@@ -531,8 +545,8 @@
                 />
                 <img class="imgC" src="./assets/cards/card2.png" loading="lazy" alt="فريق الخبراء" />
                 <div class="content">
-                  <p class="p">فريق خبراء ومعتمد</p>
-                  <p>
+                  <p class="p" id="pmid">فريق خبراء ومعتمد</p>
+                  <p id="pmids">
                     يتكون فريقنا من مهندسين وفنيين ذوي مهارات عالية مع سنوات من الخبرة في بناء وإدارة أحواض السباحة.
                   </p>
                 </div>
@@ -546,8 +560,8 @@
               <div class="card wow bounceInUp d-flex hov" id="card">
                 <img src="./assets/cards/card3.png" loading="lazy" alt="بناء أحواض السباحة" />
                 <div class="content">
-                  <p class="p">بناء أحواض السباحة الممتازة</p>
-                  <p>
+                  <p class="p" id="pmid">بناء أحواض السباحة الممتازة</p>
+                  <p id="pmids">
                     نحن متخصصون في تصميمات أحواض السباحة الحديثة باستخدام مواد عالية الجودة لضمان الجمال الجمالي والمتانة الهيكلية.
                   </p>
                 </div>

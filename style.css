@@ -1425,3 +1425,56 @@ footer {
   transform: scale(1.05);
   transition: 0.5s ease;
 }
+
+@media (max-width: 993px) {
+
+
+  header{
+    font-size:75% !important;
+   
+  }
+  #anav{
+    font-size: 16px !important;
+  }
+  #nav{
+    gap: 35px;
+  }
+  #pmid{
+    font-size: 18px !important;
+  }
+  #pmids{
+    font-size: 16px !important;
+  }
+  #imgMid{
+  
+    height:400px !important;
+  }
+  #card{
+    width: 100% !important;
+    
+  }
+  .cards{
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 20px !important;
+  }
+  #si{
+    height: 400px !important;
+  }
+  #ap{
+    font-size: 14px !important;
+  }
+  #wc{
+    font-size: 20px !important; 
+  }
+  #cInfo5{
+    width: 100% !important;
+  }
+  #cInfo2{
+    width: 100% !important;
+  }
+  form{
+    width: 100% !important;
+  }
+}
